@@ -5,11 +5,13 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     List<Enemy> enemysOnRange = new List<Enemy>();
+
     public void Attack() {
 
         for (int i = 0; i < enemysOnRange.Count; i++) {
             enemysOnRange[i].OnHit();
         }
+
         //foreach (Enemy e in enemysOnRange) {
         //    print(e);
         //    e.OnHit();

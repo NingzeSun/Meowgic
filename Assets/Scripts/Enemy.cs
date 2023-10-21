@@ -10,32 +10,69 @@ public class Enemy : MonoBehaviour
     private float directionTimerMax = 1.0f;//max number of seconds for each frame, defined by Framerate
     private Vector3 direction;
 
-    void OnCollisionEnter2D(Collision2D collision) {
-            if(collision.gameObject.TryGetComponent<Player>(out Player player)) {
-                player.OnHit();
-            }
-    }
-    public void OnHit() {
-        health--;
-        if (health <= 0)
-            Destroy(gameObject);
-    }
+    private bool idel = true;
+
+    public GameObject player;
+    //public Transform player;
+
     // Update is called once per frame
     void Update()
     {
         DirectionUpdate();
         transform.position += direction * (Time.deltaTime * Speed);
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     //Default animation update
     protected void DirectionUpdate()
     {
-        directionTimer += Time.deltaTime;
+        //directionTimer += Time.deltaTime;
 
-        if (directionTimer > directionTimerMax)
+        //if(directionTimer > directionTimerMax)
+        if (idel)
         {
-            directionTimer = 0;
-            direction = new Vector3(Random.Range(-0.1f, 0.1f), 0);
+            //directionTimer = 0;
+            direction = new Vector3(Random.Range(-0.5f, 0.5f), 0);
         }
+        else
+        {
+            transform.position += (player.transform.position - transform.position).normalized * Time.deltaTime * Speed;
+        }
+
+        if ((transform.position - player.transform.position).magnitude < 1.8f)
+        {
+            idel = false;
+        }
+        else
+        {
+            idel = true;
+        }
+
+        /*if ((transform.position - player.transform.position).magnitude < 1.8f)
+        {
+            transform.position += (player.transform.position - transform.position).normalized * Time.deltaTime * Speed;
+        }*/
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.TryGetComponent<Player>(out Player player))
+        {
+            player.OnHit();
+        }
+    }
+
+    public void OnHit()
+    {
+        health--;
+
+        /*if (health <= 0)
+        {
+            Destroy(gameObject);
+        }*/
     }
 }

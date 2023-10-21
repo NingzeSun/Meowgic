@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
     private Rigidbody2D rb;
     private Collider2D coll;
 
     [Header("Moving Reference")]
-    public float speed = 8f;
+    public float speed = 20f;
 
     float xVelocity;
 
@@ -28,10 +29,15 @@ public class Player : MonoBehaviour {
     
 
     public int health = 10;
+
     public void OnHit() {
         health--;
-        if (health <= 0)
+
+        /*if (health <= 0)
+        {
             Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }*/
     }
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -42,15 +48,26 @@ public class Player : MonoBehaviour {
 
     void Update() {
         Debug.DrawRay(transform.position, transform.right);
+
         if (rb.velocity.y > 0.1)
             animator.Play("Jump");
+        
         if (rb.velocity.y < -0.1)
             animator.Play("Fall");
+        
         //if(rb.velocity.x !=0)
         //    animator.Play("Run");
+        
         if (Input.GetButtonDown("Jump") && jumpCount > 0) {
             jumpPress = true;
         }
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
         lastFramePos = transform.position;
     }
 
@@ -95,20 +112,24 @@ public class Player : MonoBehaviour {
         }
 
         if (jumpPress && !isOnGround) {
+
             float wallJumpForce = 5;
+
             if (closeWithLeftWall) {
                 rb.velocity = new Vector2(wallJumpForce, jumpForce);
-                jumpPress = false;
-
             }
+
             if (closeWithRightWall) {
                 rb.velocity = new Vector2(-wallJumpForce, jumpForce);
-                jumpPress = false;
-
             }
+
+            jumpPress = false;
         }
+    }
 
-
+    public void Heal()
+    {
+        health += 2;
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
@@ -119,6 +140,7 @@ public class Player : MonoBehaviour {
                 closeWithLeftWall = true;
         }
     }
+
     void OnCollisionExit2D(Collision2D collision) {
         if (collision.gameObject.name.Contains("Wall")) {
             if (collision.transform.position.x > transform.position.x)
