@@ -509,7 +509,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 15
+  m_fontStyle: 32
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -587,7 +587,7 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 5106878820152919741, guid: 400746456df19a443877637533884457, type: 2}
+  - key: {fileID: 1832818933300063006, guid: 400746456df19a443877637533884457, type: 2}
     value: {fileID: 2076014757}
   m_ExposedReferences:
     m_References: []
