@@ -39,11 +39,6 @@ public class Player : MonoBehaviour {
         health--;
         onHitAudio.Play();
         StartCoroutine(Flash());
-        /*if (health <= 0)
-        {
-            Destroy(gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }*/
     }
 
     IEnumerator Flash()
