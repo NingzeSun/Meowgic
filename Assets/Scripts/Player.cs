@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
     private Rigidbody2D rb;
     private Collider2D coll;
+
 
     [Header("Moving Reference")]
     public float speed = 20f;
@@ -27,24 +30,40 @@ public class Player : MonoBehaviour {
 
     Vector3 lastFramePos;
     
-
     public int health = 10;
+   
+    public AudioSource runAudio,onHitAudio;
 
+    
     public void OnHit() {
         health--;
-
+        onHitAudio.Play();
+        StartCoroutine(Flash());
         /*if (health <= 0)
         {
             Destroy(gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }*/
     }
+
+    IEnumerator Flash()
+    {
+        SpriteRenderer spriteRender =GetComponent<SpriteRenderer>();
+        for (int i = 0; i < 6; i++) { 
+            if(spriteRender.color== new Color(1, 1, 1, 1))
+                spriteRender.color = new Color(1, 1, 1, 0);
+            else
+                spriteRender.color = new Color(1, 1, 1, 1);
+            yield return new WaitForSeconds(.5f);  // When a yield statement is used, the coroutine pauses execution and automatically resumes at the next frame.
+        }
+        spriteRender.color = new Color(1,1,1,1);
+    }
+
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
     }
-
 
     void Update() {
         Debug.DrawRay(transform.position, transform.right);
@@ -54,7 +73,6 @@ public class Player : MonoBehaviour {
         
         if (rb.velocity.y < -0.1)
             animator.Play("Fall");
-        
         //if(rb.velocity.x !=0)
         //    animator.Play("Run");
         
@@ -64,8 +82,9 @@ public class Player : MonoBehaviour {
 
         if (health <= 0)
         {
-            Destroy(gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            animator.Play("Death");
+            //Destroy(gameObject);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         lastFramePos = transform.position;
@@ -93,8 +112,13 @@ public class Player : MonoBehaviour {
         //flipping
         if (xVelocity != 0) {
             transform.localScale = new Vector3(-xVelocity, 1, 1);
+            if(!runAudio.isPlaying&&isOnGround)
+                runAudio.Play();
         }
-        
+        else
+        {
+            runAudio.Stop();
+        }
     }
 
     void Jump() {

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class Weapon : MonoBehaviour
 {
@@ -19,12 +20,11 @@ public class Weapon : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D col) {
-        col.gameObject.TryGetComponent<Enemy>(out Enemy enemy);
-        enemysOnRange.Add(enemy);
+        if(col.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
+            enemysOnRange.Add(enemy);
     }
     void OnTriggerExit2D(Collider2D col) {
-        col.gameObject.TryGetComponent<Enemy>(out Enemy enemy);
-        enemysOnRange.Remove(enemy);
+        if (col.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
+            enemysOnRange.Remove(enemy);
     }
-
 }

@@ -11,8 +11,8 @@ public class Enemy : MonoBehaviour
     private Vector3 direction;
 
     private bool idel = true;
-
     public GameObject player;
+    float lastAttackTime = -3;
     //public Transform player;
 
     // Update is called once per frame
@@ -60,8 +60,10 @@ public class Enemy : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.TryGetComponent<Player>(out Player player))
+        if (Time.time-lastAttackTime>=3&&collision.gameObject.TryGetComponent<Player>(out Player player))
         {
+            //print("Attack");
+            lastAttackTime=Time.time;
             player.OnHit();
         }
     }
