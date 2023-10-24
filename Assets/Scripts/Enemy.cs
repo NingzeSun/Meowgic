@@ -60,7 +60,7 @@ public class Enemy : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Time.time-lastAttackTime>=3&&collision.gameObject.TryGetComponent<Player>(out Player player))
+        if (Time.time-lastAttackTime>=3&&collision.gameObject.TryGetComponent<Player>(out Player player))  // if the contact is more than 3 seconds, player gets hit again
         {
             //print("Attack");
             lastAttackTime=Time.time;
