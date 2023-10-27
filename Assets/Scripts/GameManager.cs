@@ -3,6 +3,7 @@
 public class GameManager : MonoBehaviour
 {
     public GameObject pauseMenu;
+
     public void ContineGameBtn()
     {
         Time.timeScale = 1.0f;
