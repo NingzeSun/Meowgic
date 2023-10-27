@@ -1549,7 +1549,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 82477a655c6ce704e9001ef1741eacc0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c096b911829fba64db19ce45c35c8d5b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
@@ -3511,15 +3511,20 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 4.424412
       objectReference: {fileID: 0}
+    - target: {fileID: 6474417508561902980, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a8f828dd4b495654196f8c4580038630, type: 3}
     - target: {fileID: 6474417508619831186, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 90.02
+      value: 33.1
       objectReference: {fileID: 0}
     - target: {fileID: 6474417508619831186, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.11
+      value: -10.4
       objectReference: {fileID: 0}
     - target: {fileID: 6474417508619831187, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
         type: 3}
@@ -3527,6 +3532,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8793639957104055765, guid: 9c447c54c8e0416e9446cadb88c48fd3,
         type: 3}
+    - target: {fileID: 6474417509344610580, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ae575d476f995d94dae0ead08725c68d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
 --- !u!1 &1518523186
