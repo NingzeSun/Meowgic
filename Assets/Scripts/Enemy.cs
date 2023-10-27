@@ -5,9 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health = 2;
-    public float Speed = 5f;
-    private float directionTimer;//current number of seconds since last animation frame update
-    private float directionTimerMax = 1.0f;//max number of seconds for each frame, defined by Framerate
+
     private Vector3 direction;
 
     //private bool idel = true;
@@ -15,9 +13,11 @@ public class Enemy : MonoBehaviour
     float lastAttackTime = -3;
     public Transform player;
 
-    Rigidbody2D rb;
-    Transform target;
-    Vector2 moveDirection;
+    public Rigidbody2D rb;
+    public Transform leftpoint, rightpoint;
+    private bool Faceleft = false;
+    public float speed;
+    private float leftx ,rightx;
 
 
     /*public LayerMask enemyMask;
@@ -36,31 +36,19 @@ public class Enemy : MonoBehaviour
 
         myWidth = mySprite.bounds.extents.x;
         myHeight = mySprite.bounds.extents.y;*/
-
         rb = GetComponent<Rigidbody2D>();
-        target = GameObject.Find("Character").transform;
-        direction.x = Random.Range(-0.5f, 0.5f);
+        transform.DetachChildren();
+        leftx = leftpoint.position.x;
+        rightx = rightpoint.position.x;
+        Destroy(leftpoint.gameObject);
+        Destroy(rightpoint.gameObject);        
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        DirectionUpdate();
-        transform.position += direction * (Time.deltaTime * Speed);
-
-        if ( (transform.position - target.transform.position).magnitude < 3f )
-        {
-            Vector3 direction = (target.position - transform.position).normalized;
-
-            //Vector3 direction = (target.position - transform.position).normalized * Time.deltaTime * Speed;
-
-            //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            //rb.rotation = angle;
-            moveDirection = direction;
-
-            //transform.position += (player.transform.position - transform.position).normalized * Time.deltaTime * Speed;
-        }
+        movement();
 
         if (health <= 0)
         {
@@ -68,67 +56,23 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        if ( (transform.position - target.transform.position).magnitude < 3f )
-        {
-            rb.velocity = new Vector2(moveDirection.x, moveDirection.y) * Speed * 0.5f;
-
-            //rb.velocity = new Vector2(moveDirection.x, moveDirection.y).normalized * Time.deltaTime * Speed;
-        }
-    }
 
     //Default animation update
-    protected void DirectionUpdate()
-    {
-        /*directionTimer += Time.deltaTime;
-
-        if (directionTimer > directionTimerMax)
-        {
-            directionTimer = 0;
-            direction = new Vector3(Random.Range(-1f, 1f), 0);
-        }*/
-
-        if (direction.x >= 1f)
-        {
-            directionTimer = 0;
-            direction = new Vector3(-1f, 0);
-        }
-
-        if (direction.x <= -1f)
-        {
-            directionTimer = 0;
-            direction = new Vector3(1f, 0);
-        }
-
-        /*//if(directionTimer > directionTimerMax)
-        if (idel == true)
-        {
-            if (directionTimer > directionTimerMax)
-            {
-                directionTimer = 0;
-                direction = new Vector3(Random.Range(-0.5f, 0.5f), 0);
+    void movement(){
+        if(Faceleft){
+            rb.velocity = new Vector2(-speed,rb.velocity.y);
+            if (transform.position.x < leftx){
+                transform.localScale = new Vector3(-transform.localScale.x,transform.localScale.y,1);
+                Faceleft = false;
             }
-                
         }
-        else
-        {
-            transform.position += (player.transform.position - transform.position).normalized * Time.deltaTime * Speed;
+        else{
+            rb.velocity = new Vector2(speed,rb.velocity.y);
+            if (transform.position.x > rightx){
+                transform.localScale = new Vector3(-transform.localScale.x,transform.localScale.y,1);
+                Faceleft = true;
+            }
         }
-
-        if ((transform.position - player.transform.position).magnitude < 1.8f)
-        {
-            idel = false;
-        }
-        else
-        {
-            idel = true;
-        }
-
-        if ( (transform.position - player.transform.position).magnitude < 1.8f )
-        {
-            transform.position += (player.transform.position - transform.position).normalized * Time.deltaTime * Speed;
-        }*/
     }
 
     /*void FixedUpdate()
