@@ -2441,6 +2441,31 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.14
       objectReference: {fileID: 0}
+    - target: {fileID: 6474417508247639516, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1033751
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474417508247639516, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1276251
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474417508247639516, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474417508247639516, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474417508247639516, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.63
+      objectReference: {fileID: 0}
     - target: {fileID: 6474417508408526728, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2484,19 +2509,39 @@ PrefabInstance:
     - target: {fileID: 6474417508619831186, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -53.7
+      value: -16.92
       objectReference: {fileID: 0}
     - target: {fileID: 6474417508619831186, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.47
+      value: -17.82
       objectReference: {fileID: 0}
     - target: {fileID: 6474417508619831187, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 8793639957104055765, guid: 9c447c54c8e0416e9446cadb88c48fd3,
+      objectReference: {fileID: -8884706413381390686, guid: 40d38e41867592e4f98105e76aa62c34,
         type: 3}
+    - target: {fileID: 6474417508619831198, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.3176155
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474417508619831198, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.7576382
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474417508619831198, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.5649071
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474417508619831198, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.07118094
+      objectReference: {fileID: 0}
     - target: {fileID: 6474417509344610580, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
         type: 3}
       propertyPath: m_audioClip
@@ -2516,7 +2561,7 @@ GameObject:
   - component: {fileID: 1517096338}
   - component: {fileID: 1517096337}
   - component: {fileID: 1517096339}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}

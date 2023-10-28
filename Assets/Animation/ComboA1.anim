@@ -20,40 +20,22 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -5596403434367763912, guid: 15eb07192dee43dcb169478da3b487d0,
-        type: 3}
-    - time: 0.05
-      value: {fileID: -7145805432888423624, guid: 15eb07192dee43dcb169478da3b487d0,
+      value: {fileID: -5900155070285054248, guid: 5c762448497ca584385b58033d2e4f34,
         type: 3}
     - time: 0.1
-      value: {fileID: 3071205789112617865, guid: 15eb07192dee43dcb169478da3b487d0,
-        type: 3}
-    - time: 0.15
-      value: {fileID: -3670109957379440039, guid: 15eb07192dee43dcb169478da3b487d0,
+      value: {fileID: 7770983789300885651, guid: 5c762448497ca584385b58033d2e4f34,
         type: 3}
     - time: 0.2
-      value: {fileID: 5864560565712805051, guid: 15eb07192dee43dcb169478da3b487d0,
-        type: 3}
-    - time: 0.25
-      value: {fileID: 4078094221647819816, guid: 15eb07192dee43dcb169478da3b487d0,
+      value: {fileID: -622204497378986692, guid: 5c762448497ca584385b58033d2e4f34,
         type: 3}
     - time: 0.3
-      value: {fileID: 8966263863505769567, guid: 15eb07192dee43dcb169478da3b487d0,
-        type: 3}
-    - time: 0.35
-      value: {fileID: 7827905936403376988, guid: 15eb07192dee43dcb169478da3b487d0,
+      value: {fileID: 2746281784291711437, guid: 5c762448497ca584385b58033d2e4f34,
         type: 3}
     - time: 0.4
-      value: {fileID: -253428081577774302, guid: 15eb07192dee43dcb169478da3b487d0,
-        type: 3}
-    - time: 0.45
-      value: {fileID: 8151861652172512272, guid: 15eb07192dee43dcb169478da3b487d0,
+      value: {fileID: -4816259815703099855, guid: 5c762448497ca584385b58033d2e4f34,
         type: 3}
     - time: 0.5
-      value: {fileID: -7483180673390476490, guid: 15eb07192dee43dcb169478da3b487d0,
-        type: 3}
-    - time: 0.55
-      value: {fileID: -1779436703557748743, guid: 15eb07192dee43dcb169478da3b487d0,
+      value: {fileID: 4475566716006511700, guid: 5c762448497ca584385b58033d2e4f34,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -74,24 +56,18 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -5596403434367763912, guid: 15eb07192dee43dcb169478da3b487d0, type: 3}
-    - {fileID: -7145805432888423624, guid: 15eb07192dee43dcb169478da3b487d0, type: 3}
-    - {fileID: 3071205789112617865, guid: 15eb07192dee43dcb169478da3b487d0, type: 3}
-    - {fileID: -3670109957379440039, guid: 15eb07192dee43dcb169478da3b487d0, type: 3}
-    - {fileID: 5864560565712805051, guid: 15eb07192dee43dcb169478da3b487d0, type: 3}
-    - {fileID: 4078094221647819816, guid: 15eb07192dee43dcb169478da3b487d0, type: 3}
-    - {fileID: 8966263863505769567, guid: 15eb07192dee43dcb169478da3b487d0, type: 3}
-    - {fileID: 7827905936403376988, guid: 15eb07192dee43dcb169478da3b487d0, type: 3}
-    - {fileID: -253428081577774302, guid: 15eb07192dee43dcb169478da3b487d0, type: 3}
-    - {fileID: 8151861652172512272, guid: 15eb07192dee43dcb169478da3b487d0, type: 3}
-    - {fileID: -7483180673390476490, guid: 15eb07192dee43dcb169478da3b487d0, type: 3}
-    - {fileID: -1779436703557748743, guid: 15eb07192dee43dcb169478da3b487d0, type: 3}
+    - {fileID: -5900155070285054248, guid: 5c762448497ca584385b58033d2e4f34, type: 3}
+    - {fileID: 7770983789300885651, guid: 5c762448497ca584385b58033d2e4f34, type: 3}
+    - {fileID: -622204497378986692, guid: 5c762448497ca584385b58033d2e4f34, type: 3}
+    - {fileID: 2746281784291711437, guid: 5c762448497ca584385b58033d2e4f34, type: 3}
+    - {fileID: -4816259815703099855, guid: 5c762448497ca584385b58033d2e4f34, type: 3}
+    - {fileID: 4475566716006511700, guid: 5c762448497ca584385b58033d2e4f34, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6
+    m_StopTime: 0.55
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -111,7 +87,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.4
+  - time: 0.35
     functionName: ComboCheck
     data: 
     objectReferenceParameter: {fileID: 0}
