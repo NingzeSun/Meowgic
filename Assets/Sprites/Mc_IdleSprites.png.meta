@@ -1,37 +1,34 @@
 fileFormatVersion: 2
-guid: 52fa2a8649be13f4281060b46b37f2bb
+guid: b008eef188e23a448ae94cee74afb455
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5213658705318193429
-    second: MC_JumpSprites__0
+      213: -4671765865792626103
+    second: Mc_IdleSprites_0
   - first:
-      213: -1913348949310989661
-    second: MC_JumpSprites__1
+      213: 8190409461256569908
+    second: Mc_IdleSprites_1
   - first:
-      213: 5037823159387859107
-    second: MC_JumpSprites__2
+      213: 5351013436419610683
+    second: Mc_IdleSprites_2
   - first:
-      213: -4707192672955590579
-    second: MC_JumpSprites__3
+      213: -7325026022102769352
+    second: Mc_IdleSprites_3
   - first:
-      213: -1801532144411876584
-    second: MC_JumpSprites__4
+      213: 4469956058137737637
+    second: Mc_IdleSprites_4
   - first:
-      213: -8155234341102084830
-    second: MC_JumpSprites__5
+      213: -998998240817044397
+    second: Mc_IdleSprites_5
   - first:
-      213: 7915892186917143920
-    second: MC_JumpSprites__6
+      213: 3142500306666642204
+    second: Mc_IdleSprites_6
   - first:
-      213: 1880819070388273140
-    second: MC_JumpSprites__7
+      213: -8580960936334062146
+    second: Mc_IdleSprites_7
   - first:
-      213: -154242670005570427
-    second: MC_JumpSprites__8
-  - first:
-      213: 8074272450681654112
-    second: MC_JumpSprites__9
+      213: 3971844362457351738
+    second: Mc_IdleSprites_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -129,97 +126,97 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_JumpSprites__0
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 807
-        width: 184
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be6d269d70d55a7b0800000000000000
-      internalID: -5213658705318193429
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_JumpSprites__1
-      rect:
-        serializedVersion: 2
-        x: 486
-        y: 793
-        width: 180
-        height: 159
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3aa93f8944b6275e0800000000000000
-      internalID: -1913348949310989661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_JumpSprites__2
-      rect:
-        serializedVersion: 2
-        x: 869
-        y: 769
-        width: 148
-        height: 149
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a8ac80d871f9e540800000000000000
-      internalID: 5037823159387859107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_JumpSprites__3
-      rect:
-        serializedVersion: 2
-        x: 1240
-        y: 769
-        width: 128
-        height: 163
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4819272431bcaeb0800000000000000
-      internalID: -4707192672955590579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_JumpSprites__4
+      name: Mc_IdleSprites_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 503
+        y: 610
+        width: 144
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942a2a772bd8a2fb0800000000000000
+      internalID: -4671765865792626103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mc_IdleSprites_1
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 610
+        width: 143
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4344237a20e2aa170800000000000000
+      internalID: 8190409461256569908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mc_IdleSprites_2
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 610
+        width: 140
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38122a9e5e924a40800000000000000
+      internalID: 5351013436419610683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mc_IdleSprites_3
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 610
+        width: 132
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831621e74a7485a90800000000000000
+      internalID: -7325026022102769352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mc_IdleSprites_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 305
         width: 139
-        height: 124
+        height: 156
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,61 +224,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 813e1e04f0caff6e0800000000000000
-      internalID: -1801532144411876584
+      spriteID: 5a9b7ee1a59780e30800000000000000
+      internalID: 4469956058137737637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_JumpSprites__5
+      name: Mc_IdleSprites_5
       rect:
         serializedVersion: 2
-        x: 322
-        y: 473
-        width: 142
-        height: 164
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22d1b863399c2de80800000000000000
-      internalID: -8155234341102084830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_JumpSprites__6
-      rect:
-        serializedVersion: 2
-        x: 689
-        y: 512
-        width: 145
-        height: 145
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0758c79f006eadd60800000000000000
-      internalID: 7915892186917143920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_JumpSprites__7
-      rect:
-        serializedVersion: 2
-        x: 1159
-        y: 474
-        width: 145
+        x: 305
+        y: 305
+        width: 143
         height: 159
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -290,20 +245,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fff541caf20a1a10800000000000000
-      internalID: 1880819070388273140
+      spriteID: 3542cd49468d222f0800000000000000
+      internalID: -998998240817044397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_JumpSprites__8
+      name: Mc_IdleSprites_6
       rect:
         serializedVersion: 2
-        x: 719
+        x: 610
+        y: 305
+        width: 141
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1bdb6511676c9b20800000000000000
+      internalID: 3142500306666642204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mc_IdleSprites_7
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 305
+        width: 142
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd0e460e7d4ae880800000000000000
+      internalID: -8580960936334062146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mc_IdleSprites_8
+      rect:
+        serializedVersion: 2
+        x: 916
         y: 0
-        width: 183
-        height: 148
+        width: 133
+        height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,29 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5843c1ddb150cddf0800000000000000
-      internalID: -154242670005570427
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_JumpSprites__9
-      rect:
-        serializedVersion: 2
-        x: 1102
-        y: 81
-        width: 153
-        height: 146
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06b4a9ab3049d0070800000000000000
-      internalID: 8074272450681654112
+      spriteID: a3688676763de1730800000000000000
+      internalID: 3971844362457351738
       vertices: []
       indices: 
       edges: []

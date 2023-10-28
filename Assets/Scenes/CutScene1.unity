@@ -447,14 +447,14 @@ RectTransform:
   m_GameObject: {fileID: 2076014753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.0875, z: 1}
   m_Children: []
   m_Father: {fileID: 1133161138}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1, y: 181}
+  m_AnchoredPosition: {x: 99, y: 205}
   m_SizeDelta: {x: -824, y: -718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2076014755
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "In a land of felines, the Persian cat reigns supreme. The king\u2019s
+  m_text: "  In a land of felines, the Persian cat reigns supreme. The king\u2019s
     obsession with long hair has led him to use black magic to make all the cats
     in the country grow their hair to ridiculous lengths. The once-beautiful cats
     have turned into hairy monsters, and the kingdom is in chaos. Our hero, a brave
@@ -509,8 +509,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -408.30524, y: 0, z: -412.64905, w: -320.3012}
+  m_margin: {x: -269.174, y: 1.432572, z: -53.465515, w: -359.43686}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

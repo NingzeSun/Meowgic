@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7f54dc2d2e3cd704c8b53bbdf7f0bf11
+guid: dc69b1c5a30c2614b9573455ffcb30a6
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -121,9 +121,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 395
-        width: 282
-        height: 213
+        y: 241
+        width: 172
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: MC_RunSprites_1
       rect:
         serializedVersion: 2
-        x: 393
-        y: 394
-        width: 282
-        height: 222
+        x: 239
+        y: 241
+        width: 173
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: MC_RunSprites_2
       rect:
         serializedVersion: 2
-        x: 790
-        y: 396
-        width: 282
-        height: 211
+        x: 482
+        y: 242
+        width: 172
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: MC_RunSprites_3
       rect:
         serializedVersion: 2
-        x: 1184
-        y: 394
-        width: 298
-        height: 202
+        x: 722
+        y: 241
+        width: 182
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +204,10 @@ TextureImporter:
       name: MC_RunSprites_4
       rect:
         serializedVersion: 2
-        x: 787
+        x: 480
         y: 0
-        width: 282
-        height: 221
+        width: 173
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,10 +225,10 @@ TextureImporter:
       name: MC_RunSprites_5
       rect:
         serializedVersion: 2
-        x: 1184
+        x: 723
         y: 0
-        width: 283
-        height: 222
+        width: 172
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
