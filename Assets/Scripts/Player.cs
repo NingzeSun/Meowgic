@@ -49,7 +49,7 @@ public class Player : MonoBehaviour {
                 spriteRender.color = new Color(1, 1, 1, 0);
             else
                 spriteRender.color = new Color(1, 1, 1, 1);
-            yield return new WaitForSeconds(.5f);  // When a yield statement is used, the coroutine pauses execution and automatically resumes at the next frame.
+            yield return new WaitForSeconds(.2f);  // When a yield statement is used, the coroutine pauses execution and automatically resumes at the next frame.
         }
         spriteRender.color = new Color(1,1,1,1);
     }
