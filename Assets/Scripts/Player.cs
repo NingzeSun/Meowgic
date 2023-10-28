@@ -37,8 +37,12 @@ public class Player : MonoBehaviour {
     
     public void OnHit() {
         health--;
-        onHitAudio.Play();
-        StartCoroutine(Flash());
+        if (health >= 1)
+        {
+            onHitAudio.Play();
+            StartCoroutine(Flash());
+        }
+        
     }
 
     IEnumerator Flash()
