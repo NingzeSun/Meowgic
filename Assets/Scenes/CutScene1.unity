@@ -454,7 +454,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3, y: -9}
+  m_AnchoredPosition: {x: 1, y: 181}
   m_SizeDelta: {x: -824, y: -718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2076014755
@@ -476,7 +476,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your adventure starts here!
+  m_text: "In a land of felines, the Persian cat reigns supreme. The king\u2019s
+    obsession with long hair has led him to use black magic to make all the cats
+    in the country grow their hair to ridiculous lengths. The once-beautiful cats
+    have turned into hairy monsters, and the kingdom is in chaos. Our hero, a brave
+    cat, sets out on a perilous journey to defeat the King of Persian Cats and save
+    the kingdom from certain doom. Will our hero be able to overcome the king\u2019s
+    dark magic and restore peace to the land? Only time will tell\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -539,7 +545,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -408.30524, y: 0, z: -412.64905, w: 0}
+  m_margin: {x: -408.30524, y: 0, z: -412.64905, w: -320.3012}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
