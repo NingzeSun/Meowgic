@@ -1,55 +1,52 @@
 fileFormatVersion: 2
-guid: 2601e7dcdd88d604686d42ab2336b116
+guid: 5c762448497ca584385b58033d2e4f34
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7810084298866296829
-    second: mc2 combo moves_0
+      213: -5900155070285054248
+    second: MC_Combo movesSprites_0
   - first:
-      213: 4723510022625964046
-    second: mc2 combo moves_1
+      213: 7770983789300885651
+    second: MC_Combo movesSprites_1
   - first:
-      213: 7462200143472922698
-    second: mc2 combo moves_2
+      213: -622204497378986692
+    second: MC_Combo movesSprites_2
   - first:
-      213: 3076038888442562992
-    second: mc2 combo moves_3
+      213: 2746281784291711437
+    second: MC_Combo movesSprites_3
   - first:
-      213: -1109624946833957736
-    second: mc2 combo moves_4
+      213: -4816259815703099855
+    second: MC_Combo movesSprites_4
   - first:
-      213: 5950027706504807734
-    second: mc2 combo moves_5
+      213: 4475566716006511700
+    second: MC_Combo movesSprites_5
   - first:
-      213: 5715188001652561480
-    second: mc2 combo moves_6
+      213: 8685770902459578234
+    second: MC_Combo movesSprites_6
   - first:
-      213: 7742003335425151344
-    second: mc2 combo moves_7
+      213: 299915871171294754
+    second: MC_Combo movesSprites_7
   - first:
-      213: -3757470080090825875
-    second: mc2 combo moves_8
+      213: 5608655244539921781
+    second: MC_Combo movesSprites_8
   - first:
-      213: 1042122165220864036
-    second: mc2 combo moves_9
+      213: 8552275837208823968
+    second: MC_Combo movesSprites_9
   - first:
-      213: -1052712268395515466
-    second: mc2 combo moves_10
+      213: 1980936707940766616
+    second: MC_Combo movesSprites_10
   - first:
-      213: -3308724758274097177
-    second: mc2 combo moves_11
+      213: -7887332141150569466
+    second: MC_Combo movesSprites_11
   - first:
-      213: 9212948447264009944
-    second: mc2 combo moves_12
+      213: -6893260460774940508
+    second: MC_Combo movesSprites_12
   - first:
-      213: 543759115117411524
-    second: mc2 combo moves_13
+      213: 5978432293531157508
+    second: MC_Combo movesSprites_13
   - first:
-      213: -6953224343397747734
-    second: mc2 combo moves_14
-  - first:
-      213: 4681619248963880801
-    second: mc2 combo moves_15
+      213: -3113644975885944828
+    second: MC_Combo movesSprites_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -131,341 +128,332 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mc2 combo moves_0
+      name: MC_Combo movesSprites_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 1697
-        width: 182
-        height: 164
+        x: 0
+        y: 1131
+        width: 449
+        height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df708cb4a4ef26c60800000000000000
-      internalID: 7810084298866296829
+      spriteID: 8de70f359307e1ea0800000000000000
+      internalID: -5900155070285054248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_1
+      name: MC_Combo movesSprites_1
       rect:
         serializedVersion: 2
-        x: 643
-        y: 1699
-        width: 206
-        height: 180
+        x: 1009
+        y: 1137
+        width: 463
+        height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e003e9fd6574d8140800000000000000
-      internalID: 4723510022625964046
+      spriteID: 398299c759418db60800000000000000
+      internalID: 7770983789300885651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_2
+      name: MC_Combo movesSprites_2
       rect:
         serializedVersion: 2
-        x: 1309
-        y: 1699
-        width: 170
-        height: 146
+        x: 1825
+        y: 1134
+        width: 647
+        height: 279
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a40929a7e7f0f8760800000000000000
-      internalID: 7462200143472922698
+      spriteID: c3533146e4c7d57f0800000000000000
+      internalID: -622204497378986692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_3
+      name: MC_Combo movesSprites_3
       rect:
         serializedVersion: 2
-        x: 1953
-        y: 1699
-        width: 282
-        height: 136
+        x: 2845
+        y: 1134
+        width: 642
+        height: 279
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 340, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b908ec421940ba20800000000000000
-      internalID: 3076038888442562992
+      spriteID: dc955dd7bb0cc1620800000000000000
+      internalID: 2746281784291711437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_4
+      name: MC_Combo movesSprites_4
       rect:
         serializedVersion: 2
-        x: 2589
-        y: 1699
-        width: 290
-        height: 136
+        x: 3862
+        y: 1137
+        width: 677
+        height: 276
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89cdc0a6df1d990f0800000000000000
-      internalID: -1109624946833957736
+      spriteID: 136470b1735392db0800000000000000
+      internalID: -4816259815703099855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_5
+      name: MC_Combo movesSprites_5
       rect:
         serializedVersion: 2
-        x: 3237
-        y: 1697
-        width: 285
-        height: 142
+        x: 4911
+        y: 1131
+        width: 614
+        height: 282
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63583f9acaeb29250800000000000000
-      internalID: 5950027706504807734
+      spriteID: 454312437386c1e30800000000000000
+      internalID: 4475566716006511700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_6
+      name: MC_Combo movesSprites_6
       rect:
         serializedVersion: 2
-        x: 61
-        y: 1339
-        width: 285
-        height: 140
+        x: 902
+        y: 565
+        width: 370
+        height: 311
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8465317053d605f40800000000000000
-      internalID: 5715188001652561480
+      spriteID: a77f689dd9e0a8870800000000000000
+      internalID: 8685770902459578234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_7
+      name: MC_Combo movesSprites_7
       rect:
         serializedVersion: 2
-        x: 735
-        y: 1337
-        width: 296
-        height: 172
+        x: 1911
+        y: 565
+        width: 335
+        height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 071d7e1c30f117b60800000000000000
-      internalID: 7742003335425151344
+      spriteID: 226baa355e3892400800000000000000
+      internalID: 299915871171294754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_8
+      name: MC_Combo movesSprites_8
       rect:
         serializedVersion: 2
-        x: 1387
-        y: 1337
-        width: 178
-        height: 206
+        x: 3085
+        y: 565
+        width: 280
+        height: 323
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6b170ebed8cadbc0800000000000000
-      internalID: -3757470080090825875
+      spriteID: 5750f6e9a32f5dd40800000000000000
+      internalID: 5608655244539921781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_9
+      name: MC_Combo movesSprites_9
       rect:
         serializedVersion: 2
-        x: 2097
-        y: 1337
-        width: 212
-        height: 174
+        x: 3927
+        y: 565
+        width: 469
+        height: 269
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 420fc8e769c567e00800000000000000
-      internalID: 1042122165220864036
+      spriteID: 0a80df1ef89cfa670800000000000000
+      internalID: 8552275837208823968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_10
+      name: MC_Combo movesSprites_10
       rect:
         serializedVersion: 2
-        x: 2715
-        y: 1337
-        width: 234
-        height: 196
+        x: 5011
+        y: 565
+        width: 445
+        height: 221
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b1f697f4c30461f0800000000000000
-      internalID: -1052712268395515466
+      spriteID: 893575fb073bd7b10800000000000000
+      internalID: 1980936707940766616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_11
+      name: MC_Combo movesSprites_11
       rect:
         serializedVersion: 2
-        x: 3461
-        y: 1337
-        width: 236
-        height: 199
+        x: 1779
+        y: 0
+        width: 324
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ef388bdc5c0512d0800000000000000
-      internalID: -3308724758274097177
+      spriteID: 60cf23dd4319a8290800000000000000
+      internalID: -7887332141150569466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_12
+      name: MC_Combo movesSprites_12
       rect:
         serializedVersion: 2
-        x: 233
-        y: 979
-        width: 378
-        height: 150
+        x: 2602
+        y: 0
+        width: 518
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8de682decc7fadf70800000000000000
-      internalID: 9212948447264009944
+      spriteID: 4a0a34b02283650a0800000000000000
+      internalID: -6893260460774940508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_13
+      name: MC_Combo movesSprites_13
       rect:
         serializedVersion: 2
-        x: 899
-        y: 979
-        width: 336
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        x: 3597
+        y: 0
+        width: 699
+        height: 241
+      alignment: 9
+      pivot: {x: 0.4912902, y: 0.4557887}
+      border: {x: 0, y: 0, z: 158, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cc34f3c802db8700800000000000000
-      internalID: 543759115117411524
+      spriteID: 40406a1fe78a7f250800000000000000
+      internalID: 5978432293531157508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2 combo moves_14
+      name: MC_Combo movesSprites_14
       rect:
         serializedVersion: 2
-        x: 1543
-        y: 977
-        width: 330
-        height: 150
+        x: 4590
+        y: 0
+        width: 594
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae3bd28ac4f218f90800000000000000
-      internalID: -6953224343397747734
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mc2 combo moves_15
-      rect:
-        serializedVersion: 2
-        x: 2187
-        y: 977
-        width: 206
-        height: 152
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1678f1417e378f040800000000000000
-      internalID: 4681619248963880801
+      spriteID: 40873a7246c1ac4d0800000000000000
+      internalID: -3113644975885944828
       vertices: []
       indices: 
       edges: []

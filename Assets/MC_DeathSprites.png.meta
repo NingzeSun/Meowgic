@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 5ada113fc2ba8ee40882bc6ca3377ec2
+guid: fdb3b69a753ea65428a197a99e3ed3bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6188940487484346217
-    second: mc2-run_0
+      213: -1336144997335615327
+    second: MC_DeathSprites_0
   - first:
-      213: -7929935184190536600
-    second: mc2-run_1
+      213: 8168779296425260876
+    second: MC_DeathSprites_1
   - first:
-      213: 4009806405865191281
-    second: mc2-run_2
+      213: -7036173291818467307
+    second: MC_DeathSprites_2
   - first:
-      213: -1330567966888566011
-    second: mc2-run_3
+      213: -2593741296488655659
+    second: MC_DeathSprites_3
   - first:
-      213: -4314952663451075667
-    second: mc2-run_4
+      213: 1692462496865802702
+    second: MC_DeathSprites_4
   - first:
-      213: -6751654192706818655
-    second: mc2-run_5
+      213: 6371136816679351169
+    second: MC_DeathSprites_5
+  - first:
+      213: -2110014828410651130
+    second: MC_DeathSprites_6
+  - first:
+      213: 450263592111928591
+    second: MC_DeathSprites_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,17 +107,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mc2-run_0
+      name: MC_DeathSprites_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 636
-        width: 375
-        height: 254
+        x: 93
+        y: 461
+        width: 263
+        height: 245
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7907673ca677c1aa0800000000000000
-      internalID: -6188940487484346217
+      spriteID: 1a83561443f057de0800000000000000
+      internalID: -1336144997335615327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2-run_1
+      name: MC_DeathSprites_1
       rect:
         serializedVersion: 2
-        x: 543
-        y: 638
-        width: 355
-        height: 264
+        x: 559
+        y: 461
+        width: 267
+        height: 245
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 864837ee6f533f190800000000000000
-      internalID: -7929935184190536600
+      spriteID: c473ef37d755d5170800000000000000
+      internalID: 8168779296425260876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2-run_2
+      name: MC_DeathSprites_2
       rect:
         serializedVersion: 2
-        x: 1044
-        y: 636
-        width: 355
-        height: 278
+        x: 1012
+        y: 462
+        width: 262
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1773ea76ea1b5a730800000000000000
-      internalID: 4009806405865191281
+      spriteID: 510c11b9bad7a5e90800000000000000
+      internalID: -7036173291818467307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2-run_3
+      name: MC_DeathSprites_3
       rect:
         serializedVersion: 2
-        x: 1539
-        y: 637
-        width: 355
-        height: 268
+        x: 1469
+        y: 461
+        width: 287
+        height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 503e718db7fd88de0800000000000000
-      internalID: -1330567966888566011
+      spriteID: 5d45887780e210cd0800000000000000
+      internalID: -2593741296488655659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2-run_4
+      name: MC_DeathSprites_4
       rect:
         serializedVersion: 2
-        x: 46
-        y: 138
-        width: 355
-        height: 280
+        x: 0
+        y: 0
+        width: 352
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dab7f580a653e14c0800000000000000
-      internalID: -4314952663451075667
+      spriteID: ec95b518ca5dc7710800000000000000
+      internalID: 1692462496865802702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mc2-run_5
+      name: MC_DeathSprites_5
       rect:
         serializedVersion: 2
-        x: 547
-        y: 139
-        width: 355
-        height: 278
+        x: 480
+        y: 1
+        width: 332
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,8 +242,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1adee65984e4d42a0800000000000000
-      internalID: -6751654192706818655
+      spriteID: 183f595dd23da6850800000000000000
+      internalID: 6371136816679351169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_DeathSprites_6
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 2
+        width: 314
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60eb6c161b8b7b2e0800000000000000
+      internalID: -2110014828410651130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_DeathSprites_7
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 2
+        width: 203
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f057f17f958af3600800000000000000
+      internalID: 450263592111928591
       vertices: []
       indices: 
       edges: []
