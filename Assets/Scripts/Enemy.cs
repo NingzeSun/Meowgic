@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
     public Transform leftpoint, rightpoint;
     private bool Faceleft = false;
     public float speed;
-    private float leftx ,rightx;
+    public float leftx ,rightx;
 
 
     /*public LayerMask enemyMask;
@@ -108,7 +108,7 @@ public class Enemy : MonoBehaviour
     {
         Player player = collision.gameObject.GetComponent<Player>();
 
-        if (Time.time - lastAttackTime >= 3 && player != null)  // if the contact is more than 3 seconds, player gets hit again
+        if (Time.time - lastAttackTime >= 0 && player != null)  // if the contact is more than 3 seconds, player gets hit again
         {
             //print("Attack");
             lastAttackTime = Time.time;
