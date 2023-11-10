@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour {
     private Rigidbody2D rb;
     private Collider2D coll;
-
+    public int damage;
 
     [Header("Moving Reference")]
     public float speed = 20f;
@@ -14,7 +14,7 @@ public class Player : MonoBehaviour {
     float xVelocity;
 
     [Header("Jumping Reference")]
-    public float jumpForce = 8f;
+    public float jumpForce = 8;
 
     int jumpCount; // the maximum times a player can jump from the ground is one, if less than one(initial value), the player cannot jump
 

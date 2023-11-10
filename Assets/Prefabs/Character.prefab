@@ -544,6 +544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6474417508557263731}
   - component: {fileID: 6474417508557263730}
+  - component: {fileID: 639256858234376607}
   m_Layer: 0
   m_Name: shadow
   m_TagString: Untagged
@@ -612,9 +613,21 @@ SpriteRenderer:
   m_Size: {x: 1.9230769, y: 0.9230769}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &639256858234376607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6474417508557263740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cacafeada90de947934e9c0cb38f14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6474417508619831193
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,7 +719,7 @@ SpriteRenderer:
   m_Size: {x: 2.7692308, y: 2.3076923}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &6474417508619831196
@@ -777,6 +790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135ea1a5be882e24783bd8bac059a220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
   speed: 0.05
   jumpForce: 6
   isOnGround: 0

@@ -28,3 +28,4 @@ public class Weapon : MonoBehaviour
             enemysOnRange.Remove(enemy);
     }
 }
+
