@@ -19,6 +19,7 @@ public class Enemy_behaviour : MonoBehaviour
     public float timer; //Timer for cooldown between attacks
     public Transform leftLimit;
     public Transform rightLimit;
+    public int health = 2;
     #endregion
 
     #region Private Variables
@@ -32,15 +33,24 @@ public class Enemy_behaviour : MonoBehaviour
     private float intTimer;
     #endregion
 
+    Player player;
+    //Weapon weapon;
+
     void Awake()
     {
         SelectTarget();
         intTimer = timer; //Store the inital value of timer
         anim = GetComponent<Animator>();
+        player = FindObjectOfType<Player>();
     }
 
     void Update()
     {
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+
         if (!attackMode)
         {
             Move();
@@ -75,12 +85,14 @@ public class Enemy_behaviour : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D trig)
     {
+
         if (trig.gameObject.tag == "Player")
         {
             target = trig.transform;
             inRange = true;
-            Flip(); 
+            Flip();
         }
+
     }
 
     void EnemyLogic()
@@ -91,15 +103,18 @@ public class Enemy_behaviour : MonoBehaviour
         {
             StopAttack();
         }
+        //else if (attackDistance >= distance && cooling == false && attackMode == true)
         else if (attackDistance >= distance && cooling == false)
         {
             Attack();
+            cooling = true;
         }
 
         if (cooling)
         {
+            //anim.SetBool("Attack", false);
             Cooldown();
-            anim.SetBool("Attack", false);
+            //anim.SetBool("Attack", false);
         }
     }
 
@@ -122,6 +137,14 @@ public class Enemy_behaviour : MonoBehaviour
 
         anim.SetBool("canWalk", false);
         anim.SetBool("Attack", true);
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack") == true)
+        {
+            Debug.Log("Enemy attacked");
+            player.OnHit();
+        }
+
+        //player.OnHit();
     }
 
     void Cooldown()
@@ -129,14 +152,19 @@ public class Enemy_behaviour : MonoBehaviour
         timer -= Time.deltaTime;
 
         if (timer <= 0 && cooling && attackMode)
+        //if (timer <= 0 && cooling)
         {
             cooling = false;
             timer = intTimer;
+
+            //attackMode = true;
+            //anim.SetBool("Attack", true);
         }
     }
 
     void StopAttack()
     {
+        //cooling = true;
         cooling = false;
         attackMode = false;
         anim.SetBool("Attack", false);
@@ -187,13 +215,14 @@ public class Enemy_behaviour : MonoBehaviour
     void Flip()
     {
         Vector3 rotation = transform.eulerAngles;
-        if (transform.position.x > target.position.x) 
+
+        if (transform.position.x > target.position.x)
         {
             rotation.y = 180;
+            Debug.Log("Twist");
         }
         else
         {
-            Debug.Log("Twist");
             rotation.y = 0;
         }
 
@@ -201,5 +230,10 @@ public class Enemy_behaviour : MonoBehaviour
         //rotation.y = (currentTarget.position.x < transform.position.x) ? rotation.y = 180f : rotation.y = 0f;
 
         transform.eulerAngles = rotation;
+    }
+
+    public void OnHit()
+    {
+        health--;
     }
 }
