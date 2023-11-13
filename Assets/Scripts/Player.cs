@@ -107,17 +107,11 @@ public class Player : MonoBehaviour {
     void Move() {
         xVelocity = Input.GetAxisRaw("Horizontal");
         animator.SetBool("IsMove", xVelocity != 0);
-
-        //transform.Translate(xVelocity * speed, 0, 0);
-        transform.Translate(-xVelocity * speed, 0, 0);
-        
+        transform.Translate(xVelocity * speed, 0, 0);
         //flipping
         if (xVelocity != 0) {
-
-            //transform.localScale = new Vector3(-xVelocity, 1, 1);
-            transform.localScale = new Vector3(xVelocity, 1, 1);
-            
-            if (!runAudio.isPlaying && isOnGround)
+            transform.localScale = new Vector3(-xVelocity, 1, 1);
+            if(!runAudio.isPlaying&&isOnGround)
                 runAudio.Play();
         }
         else
