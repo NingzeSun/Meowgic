@@ -142,7 +142,7 @@ public class Player : MonoBehaviour {
 
         if (jumpPress && !isOnGround) {
 
-            float wallJumpForce = 5;
+            float wallJumpForce = 0;
 
             if (closeWithLeftWall) {
                 rb.velocity = new Vector2(wallJumpForce, jumpForce);
