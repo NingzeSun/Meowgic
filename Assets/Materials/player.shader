@@ -39,7 +39,7 @@
             sampler2D _MainTex;
             float4 _MainTex_ST;
             fixed4 _Color;
-            int _BeAttack;//对外参数表示是否被攻击了
+            int _BeAttack;//whether or not getting attacked
 
             v2f vert (appdata v)
             {
@@ -53,7 +53,7 @@
             fixed4 frag (v2f i) : SV_TARGET
             {
                 fixed4 tex = tex2D(_MainTex, i.uv);
-                if (_BeAttack == 1) {//是否被攻击
+                if (_BeAttack == 1) {//if getting attacked
                     if (tex.rgba.a == 1)
                     {
                         tex.rgb = tex.rgb + _Color.rgb;
