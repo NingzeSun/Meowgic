@@ -74134,7 +74134,7 @@ PrefabInstance:
     - target: {fileID: 238214001, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
       propertyPath: tileColider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 771561815}
     - target: {fileID: 494315997, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -74182,6 +74182,18 @@ PrefabInstance:
     - target: {fileID: 497408404, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 617462647, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
+      propertyPath: m_CellSize.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 617462647, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
+      propertyPath: m_CellSize.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 617462647, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
+      propertyPath: m_Constraint
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 694429540, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
       propertyPath: m_AnchorMax.y
@@ -74586,6 +74598,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 6474417508561902980, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 637993ed100a8f24c9b47312d479ae8c, type: 3}
     - target: {fileID: 6474417508619831186, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
         type: 3}
       propertyPath: m_RootOrder
@@ -74651,6 +74668,11 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 4bc65c85edd283f4a82fe91849caa673, type: 2}
+    - target: {fileID: 6474417509344610580, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e5cddec1567c154bbf3d7314f6e7033, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
 --- !u!1 &1412278247
