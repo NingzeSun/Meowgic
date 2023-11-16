@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [Header("Jumping Reference")]
     public float jumpForce = 8;
 
-    int wallJumpCount = 1;//为1时可以贴墙跳，为0时不行
+    int wallJumpCount = 5;
 
     [Header("Status")]
     public bool isOnGround;
@@ -71,6 +71,8 @@ public class Player : MonoBehaviour
     {
         Jump();
 
+        closeWithRightWall = (Physics2D.Raycast(transform.position, transform.right, 1, LayerMask.GetMask("Ground")).collider != null);
+        closeWithLeftWall = (Physics2D.Raycast(transform.position, -transform.right, 1, LayerMask.GetMask("Ground")).collider != null);
         if (!animator.GetBool("attackCombo") && !animator.GetBool("attackCombo2") && AttackComboBehaviour.attacking == false)
         {
             if (rb.velocity.y > 0.1)
@@ -130,7 +132,7 @@ public class Player : MonoBehaviour
         //The player is on the ground
         if (isOnGround)
         {
-            wallJumpCount = 1;
+            wallJumpCount = 5;
         }
         //Jumpng from the ground
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
@@ -139,7 +141,7 @@ public class Player : MonoBehaviour
             jumpAudio.Play();
 
         }
-        if (Input.GetKeyDown(KeyCode.Space) && !isOnGround&&wallJumpCount==1)
+        if (Input.GetKeyDown(KeyCode.Space) && !isOnGround&&wallJumpCount>0)
         {
             if (closeWithLeftWall)
             {
@@ -164,23 +166,23 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name.Contains("Wall"))
+        /*if (collision.gameObject.name.Contains("Wall"))
         {
             if (collision.contacts[0].point.x > transform.position.x)
                 closeWithRightWall = true;
             if (collision.contacts[0].point.x < transform.position.x)
                 closeWithLeftWall = true;
-        }
+        }*/
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.name.Contains("Wall"))
+        /*if (collision.gameObject.name.Contains("Wall"))
         {
             if (collision.transform.position.x > transform.position.x)
                 closeWithRightWall = false;
             if (collision.transform.position.x < transform.position.x)
                 closeWithLeftWall = false;
-        }
+        }*/
     }
 }

@@ -18,6 +18,9 @@ public class Enemy : MonoBehaviour
     private bool Faceleft = false;
     public float speed;
     public float leftx ,rightx;
+    private Color OriginalColor;
+    private SpriteRenderer sr;
+    public float flashtime;
 
 
     /*public LayerMask enemyMask;
@@ -36,6 +39,8 @@ public class Enemy : MonoBehaviour
 
         myWidth = mySprite.bounds.extents.x;
         myHeight = mySprite.bounds.extents.y;*/
+        sr = GetComponent<SpriteRenderer>();
+        OriginalColor = sr.color;
         rb = GetComponent<Rigidbody2D>();
         transform.DetachChildren();
         leftx = leftpoint.position.x;
@@ -122,7 +127,17 @@ public class Enemy : MonoBehaviour
     }
 
     public void OnHit()
-    {
+    {   
         health--;
+        flashColor(flashtime);
+    }
+
+    public void flashColor(float time){
+        sr.color = Color.red;
+        Invoke("ResetColor",time);
+    }
+
+    public void ResetColor(){
+        sr.color = OriginalColor;
     }
 }
