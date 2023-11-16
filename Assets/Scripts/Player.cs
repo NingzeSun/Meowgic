@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [Header("Jumping Reference")]
     public float jumpForce = 8;
 
-    int wallJumpCount = 1;//为1时可以贴墙跳，为0时不行
+    int wallJumpCount = 1;
 
     [Header("Status")]
     public bool isOnGround;

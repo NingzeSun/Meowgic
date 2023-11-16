@@ -74183,6 +74183,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 617462644, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1005.6919
+      objectReference: {fileID: 0}
+    - target: {fileID: 617462644, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 617462647, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
+      propertyPath: m_StartAxis
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 617462647, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
       propertyPath: m_CellSize.x
       value: 100
@@ -74193,7 +74205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 617462647, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
       propertyPath: m_Constraint
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 694429540, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
       propertyPath: m_AnchorMax.y
@@ -76909,7 +76921,7 @@ GameObject:
   - component: {fileID: 2072768053}
   - component: {fileID: 2072768052}
   - component: {fileID: 2072768051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
