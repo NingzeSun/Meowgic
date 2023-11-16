@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [Header("Jumping Reference")]
     public float jumpForce = 8;
 
-    int wallJumpCount = 1;
+    int wallJumpCount = 5;
 
     [Header("Status")]
     public bool isOnGround;
@@ -132,7 +132,7 @@ public class Player : MonoBehaviour
         //The player is on the ground
         if (isOnGround)
         {
-            wallJumpCount = 1;
+            wallJumpCount = 5;
         }
         //Jumpng from the ground
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
@@ -141,7 +141,7 @@ public class Player : MonoBehaviour
             jumpAudio.Play();
 
         }
-        if (Input.GetKeyDown(KeyCode.Space) && !isOnGround&&wallJumpCount==1)
+        if (Input.GetKeyDown(KeyCode.Space) && !isOnGround&&wallJumpCount>0)
         {
             if (closeWithLeftWall)
             {
