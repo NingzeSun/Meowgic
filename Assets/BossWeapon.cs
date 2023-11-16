@@ -11,8 +11,8 @@ public class BossWeapon : MonoBehaviour
 	public Vector3 attackOffset;
 	public float attackRange = 1f;
 	public LayerMask attackMask;
-    float lastAttackTime = -10;
-    public int attackCountRemain = 3;//还能攻击几次
+    float lastAttackTime = -5;
+    public int attackCountRemain = 3;
 
     public void Attack()
 	{
