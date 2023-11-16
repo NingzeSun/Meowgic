@@ -31,6 +31,9 @@ public class Enemy_behaviour : MonoBehaviour
     private bool inRange; //Check if Player is in range
     private bool cooling; //Check if Enemy is cooling after attack
     private float intTimer;
+    private Color OriginalColor;
+    private SpriteRenderer sr;
+    public float flashtime;
     #endregion
 
     Player player;
@@ -235,5 +238,16 @@ public class Enemy_behaviour : MonoBehaviour
     public void OnHit()
     {
         health--;
+        flashColor(flashtime);
+    }
+
+
+    public void flashColor(float time){
+        sr.color = Color.red;
+        Invoke("ResetColor",time);
+    }
+
+    public void ResetColor(){
+        sr.color = OriginalColor;
     }
 }
