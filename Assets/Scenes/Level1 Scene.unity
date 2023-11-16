@@ -1468,6 +1468,7 @@ MonoBehaviour:
   speed: 2
   leftx: -4
   rightx: 5
+  flashtime: 0.2
 --- !u!95 &294630477
 Animator:
   serializedVersion: 3
@@ -1828,6 +1829,7 @@ MonoBehaviour:
   speed: 2
   leftx: -4
   rightx: 5
+  flashtime: 0.2
 --- !u!95 &397581618
 Animator:
   serializedVersion: 3
@@ -2283,6 +2285,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: health
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: flashtime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
         type: 3}
       propertyPath: leftLimit
@@ -71589,6 +71601,7 @@ MonoBehaviour:
   speed: 2
   leftx: -4
   rightx: 5
+  flashtime: 0.2
 --- !u!95 &864262328
 Animator:
   serializedVersion: 3
@@ -71864,6 +71877,7 @@ MonoBehaviour:
   speed: 2
   leftx: -4
   rightx: 5
+  flashtime: 0.2
 --- !u!50 &905904410
 Rigidbody2D:
   serializedVersion: 4
@@ -71999,6 +72013,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: health
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: flashtime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
         type: 3}
       propertyPath: leftLimit
@@ -72402,6 +72426,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: health
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: flashtime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
         type: 3}
       propertyPath: leftLimit
@@ -73962,6 +73996,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
         type: 3}
+      propertyPath: health
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: flashtime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
       propertyPath: leftLimit
       value: 
       objectReference: {fileID: 1116080457}
@@ -75055,6 +75099,7 @@ MonoBehaviour:
   speed: 2
   leftx: -4
   rightx: 5
+  flashtime: 0.2
 --- !u!95 &1566651228
 Animator:
   serializedVersion: 3
@@ -76087,6 +76132,7 @@ MonoBehaviour:
   speed: 2
   leftx: -4
   rightx: 5
+  flashtime: 0.2
 --- !u!95 &1936152964
 Animator:
   serializedVersion: 3
@@ -79719,6 +79765,7 @@ MonoBehaviour:
   speed: 2
   leftx: -4
   rightx: 5
+  flashtime: 0.2
 --- !u!95 &2081672360
 Animator:
   serializedVersion: 3
@@ -80075,6 +80122,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: flashtime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
         type: 3}
       propertyPath: leftLimit

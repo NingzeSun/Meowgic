@@ -40,7 +40,9 @@ public class Enemy_behaviour : MonoBehaviour
     //Weapon weapon;
 
     void Awake()
-    {
+    {   
+        sr = GetComponent<SpriteRenderer>();
+        OriginalColor = sr.color;
         SelectTarget();
         intTimer = timer; //Store the inital value of timer
         anim = GetComponent<Animator>();
