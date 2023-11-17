@@ -47,6 +47,9 @@ TextureImporter:
   - first:
       213: -3113644975885944828
     second: MC_Combo movesSprites_14
+  - first:
+      213: 1768837892542834631
+    second: MC_Combo movesSprites_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -149,10 +152,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 693
-        width: 274
-        height: 145
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 267
+        height: 156
+      alignment: 9
+      pivot: {x: 0.58007586, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,12 +171,12 @@ TextureImporter:
       name: MC_Combo movesSprites_1
       rect:
         serializedVersion: 2
-        x: 616
-        y: 694
+        x: 623
+        y: 697
         width: 283
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5553438, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,12 +192,12 @@ TextureImporter:
       name: MC_Combo movesSprites_2
       rect:
         serializedVersion: 2
-        x: 1116
-        y: 693
-        width: 394
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1236
+        y: 695
+        width: 274
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5602167, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,12 +213,12 @@ TextureImporter:
       name: MC_Combo movesSprites_3
       rect:
         serializedVersion: 2
-        x: 1737
-        y: 693
-        width: 392
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1964
+        y: 695
+        width: 165
+        height: 156
+      alignment: 9
+      pivot: {x: 0.3289773, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,12 +234,12 @@ TextureImporter:
       name: MC_Combo movesSprites_4
       rect:
         serializedVersion: 2
-        x: 2359
-        y: 694
-        width: 413
-        height: 169
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2569
+        y: 697
+        width: 205
+        height: 166
+      alignment: 9
+      pivot: {x: 0.3698564, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,12 +255,12 @@ TextureImporter:
       name: MC_Combo movesSprites_5
       rect:
         serializedVersion: 2
-        x: 3001
-        y: 691
-        width: 373
-        height: 172
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3200
+        y: 694
+        width: 174
+        height: 156
+      alignment: 9
+      pivot: {x: 0.3406828, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,11 +277,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 551
-        y: 345
+        y: 351
         width: 226
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 181
+      alignment: 9
+      pivot: {x: 0.38470784, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -297,9 +300,9 @@ TextureImporter:
         x: 1167
         y: 345
         width: 204
-        height: 166
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 165
+      alignment: 9
+      pivot: {x: 0.42452583, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -316,11 +319,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1884
-        y: 345
+        y: 347
         width: 171
-        height: 198
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 195
+      alignment: 9
+      pivot: {x: 0.28529045, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,9 +343,9 @@ TextureImporter:
         y: 345
         width: 286
         height: 165
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 9
+      pivot: {x: 0.5651395, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 3}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -360,9 +363,9 @@ TextureImporter:
         x: 3060
         y: 347
         width: 272
-        height: 133
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 156
+      alignment: 9
+      pivot: {x: 0.55215454, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -381,9 +384,9 @@ TextureImporter:
         x: 1087
         y: 0
         width: 197
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 156
+      alignment: 9
+      pivot: {x: 0.29548016, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -402,9 +405,9 @@ TextureImporter:
         x: 1589
         y: 0
         width: 316
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5708344, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -422,10 +425,10 @@ TextureImporter:
         serializedVersion: 2
         x: 2203
         y: 0
-        width: 478
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 318
+        height: 156
+      alignment: 9
+      pivot: {x: 0.58810484, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -444,9 +447,9 @@ TextureImporter:
         x: 2803
         y: 0
         width: 363
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 156
+      alignment: 9
+      pivot: {x: 0.6218302, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -454,6 +457,27 @@ TextureImporter:
       bones: []
       spriteID: 40873a7246c1ac4d0800000000000000
       internalID: -3113644975885944828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Combo movesSprites_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 53
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7244a01bc2c8810800000000000000
+      internalID: 1768837892542834631
       vertices: []
       indices: 
       edges: []

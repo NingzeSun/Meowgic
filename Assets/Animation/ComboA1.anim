@@ -25,16 +25,16 @@ AnimationClip:
     - time: 0.05
       value: {fileID: 7770983789300885651, guid: 1a9e443f019b58a40a4c45f1030847da,
         type: 3}
-    - time: 0.2
+    - time: 0.1
       value: {fileID: -622204497378986692, guid: 1a9e443f019b58a40a4c45f1030847da,
         type: 3}
-    - time: 0.3
+    - time: 0.15
       value: {fileID: 2746281784291711437, guid: 1a9e443f019b58a40a4c45f1030847da,
         type: 3}
-    - time: 0.45
+    - time: 0.2
       value: {fileID: -4816259815703099855, guid: 1a9e443f019b58a40a4c45f1030847da,
         type: 3}
-    - time: 0.5
+    - time: 0.25
       value: {fileID: 4475566716006511700, guid: 1a9e443f019b58a40a4c45f1030847da,
         type: 3}
     attribute: m_Sprite
@@ -67,7 +67,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.55
+    m_StopTime: 0.3
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -87,7 +87,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.35
+  - time: 0.2
     functionName: ComboCheck
     data: 
     objectReferenceParameter: {fileID: 0}

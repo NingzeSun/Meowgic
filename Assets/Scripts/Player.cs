@@ -1,12 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class Player : MonoBehaviour {
+public class Player : MonoBehaviour
+{
     private Rigidbody2D rb;
     private Collider2D coll;
-
+    public int damage;
 
     [Header("Moving Reference")]
     public float speed = 20f;
@@ -14,68 +13,75 @@ public class Player : MonoBehaviour {
     float xVelocity;
 
     [Header("Jumping Reference")]
-    public float jumpForce = 8f;
+    public float jumpForce = 8;
 
-    int jumpCount; // the maximum times a player can jump from the ground is one, if less than one(initial value), the player cannot jump
+    int wallJumpCount = 5;
 
     [Header("Status")]
     public bool isOnGround;
-
-    [Header("Environmental Detection")]
-    public LayerMask groundLayer;  // setting the groundLayer to layer 'Ground' 
-
     bool jumpPress;  // if the player has pressed the jump button
     public bool closeWithLeftWall, closeWithRightWall;
     Animator animator;
-
-    Vector3 lastFramePos;
-    
+    public float goundCheckLength;
     public int health = 10;
-   
-    public AudioSource runAudio,onHitAudio;
+    public AudioSource runAudio, onHitAudio, jumpAudio, healAudio;
+    public bool canBeHit=true;
 
-    
-    public void OnHit() {
-        health--;
-        if (health >= 1)
+
+    public void OnHit()
+    {
+        if (canBeHit == true)
         {
-            onHitAudio.Play();
-            StartCoroutine(Flash());
+            health--;
+            if (health >= 1)
+            {
+                onHitAudio.Play();
+                StartCoroutine(Flash());
+            }
         }
         
+
     }
 
     IEnumerator Flash()
     {
-        SpriteRenderer spriteRender =GetComponent<SpriteRenderer>();
-        for (int i = 0; i < 6; i++) { 
-            if(spriteRender.color== new Color(1, 1, 1, 1))
-                spriteRender.color = new Color(1, 1, 1, 0);
+        canBeHit = false;
+        Material material = GetComponent<SpriteRenderer>().material;
+        for (int i = 0; i < 6; i++)
+        {
+            if (material.GetInt("_BeAttack") == 1)
+                material.SetInt("_BeAttack", 0);
             else
-                spriteRender.color = new Color(1, 1, 1, 1);
-            yield return new WaitForSeconds(.2f);  // When a yield statement is used, the coroutine pauses execution and automatically resumes at the next frame.
+                material.SetInt("_BeAttack", 1);
+            yield return new WaitForSeconds(.2f);  // When a yield statement is used, the coroutine pauses execution and automatically resumes at the next time.
         }
-        spriteRender.color = new Color(1,1,1,1);
+        material.SetInt("_BeAttack", 0);
+        canBeHit = true;
+
     }
 
-    void Start() {
+    void Start()
+    {
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
     }
 
-    void Update() {
-        Debug.DrawRay(transform.position, transform.right);
+    void Update()
+    {
+        Jump();
 
-        if (rb.velocity.y > 0.1)
-            animator.Play("Jump");
-        
-        if (rb.velocity.y < -0.1)
-            animator.Play("Fall");
-        //if(rb.velocity.x !=0)
-        //    animator.Play("Run");
-        
-        if (Input.GetButtonDown("Jump") && jumpCount > 0) {
+        closeWithRightWall = (Physics2D.Raycast(transform.position, transform.right, 1, LayerMask.GetMask("Ground")).collider != null);
+        closeWithLeftWall = (Physics2D.Raycast(transform.position, -transform.right, 1, LayerMask.GetMask("Ground")).collider != null);
+        if (!animator.GetBool("attackCombo") && !animator.GetBool("attackCombo2") && AttackComboBehaviour.attacking == false)
+        {
+            if (rb.velocity.y > 0.1)
+                animator.Play("Jump");
+            if (rb.velocity.y < -0.1)
+                animator.Play("Fall");
+        }
+        if (Input.GetButtonDown("Jump") && wallJumpCount > 0)
+        {
             jumpPress = true;
         }
 
@@ -85,33 +91,34 @@ public class Player : MonoBehaviour {
             //Destroy(gameObject);
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-
-        lastFramePos = transform.position;
     }
 
-    void FixedUpdate() {
-        isOnGroundCheck();
+    void FixedUpdate()
+    {
         Move();
-        Jump();
+
+        isOnGroundCheck();
     }
 
-    void isOnGroundCheck() {
+    void isOnGroundCheck()
+    {
         ////determine if the player is colliding with the groundLayer which is just any 'Ground' layer object
-        if (coll.IsTouchingLayers(groundLayer)) {
-            isOnGround = true;
-        } else {
-            isOnGround = false;
-        }
+        
     }
 
-    void Move() {
+    void Move()
+    {
         xVelocity = Input.GetAxisRaw("Horizontal");
         animator.SetBool("IsMove", xVelocity != 0);
+
+        //transform.Translate(xVelocity * speed, 0, 0);
         transform.Translate(xVelocity * speed, 0, 0);
+
         //flipping
-        if (xVelocity != 0) {
+        if (xVelocity != 0)
+        {
             transform.localScale = new Vector3(-xVelocity, 1, 1);
-            if(!runAudio.isPlaying&&isOnGround)
+            if (!runAudio.isPlaying && isOnGround)
                 runAudio.Play();
         }
         else
@@ -120,56 +127,62 @@ public class Player : MonoBehaviour {
         }
     }
 
-    void Jump() {
-
+    void Jump()
+    {
         //The player is on the ground
-        if (isOnGround) {
-            jumpCount = 1;
+        if (isOnGround)
+        {
+            wallJumpCount = 5;
         }
         //Jumpng from the ground
-        if (jumpPress && isOnGround) {
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            jumpCount--;
-            jumpPress = false;
+            jumpAudio.Play();
 
         }
-
-        if (jumpPress && !isOnGround) {
-
-            float wallJumpForce = 5;
-
-            if (closeWithLeftWall) {
-                rb.velocity = new Vector2(wallJumpForce, jumpForce);
+        if (Input.GetKeyDown(KeyCode.Space) && !isOnGround&&wallJumpCount>0)
+        {
+            if (closeWithLeftWall)
+            {
+                wallJumpCount--;
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                jumpAudio.Play();
             }
-
-            if (closeWithRightWall) {
-                rb.velocity = new Vector2(-wallJumpForce, jumpForce);
+            if (closeWithRightWall)
+            {
+                wallJumpCount--;
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                jumpAudio.Play();
             }
-
-            jumpPress = false;
         }
     }
 
     public void Heal()
     {
         health += 2;
+        healAudio.Play();
     }
 
-    void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.name.Contains("Wall")) {
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        /*if (collision.gameObject.name.Contains("Wall"))
+        {
             if (collision.contacts[0].point.x > transform.position.x)
                 closeWithRightWall = true;
             if (collision.contacts[0].point.x < transform.position.x)
                 closeWithLeftWall = true;
-        }
+        }*/
     }
 
-    void OnCollisionExit2D(Collision2D collision) {
-        if (collision.gameObject.name.Contains("Wall")) {
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        /*if (collision.gameObject.name.Contains("Wall"))
+        {
             if (collision.transform.position.x > transform.position.x)
                 closeWithRightWall = false;
             if (collision.transform.position.x < transform.position.x)
                 closeWithLeftWall = false;
-        }
+        }*/
     }
 }

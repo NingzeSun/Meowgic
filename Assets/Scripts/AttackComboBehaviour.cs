@@ -1,15 +1,16 @@
 ﻿// Reference: https://www.cnblogs.com/sanyejun/p/12685963.html
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackComboBehaviour : StateMachineBehaviour {
-    private static readonly int Attack = Animator.StringToHash("attackCombo");
+public class AttackComboBehaviour : StateMachineBehaviour
+{
     Weapon weapon;
     BoxCollider2D boxCollider2D;
+    public static bool attacking=false;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        attacking= true;
         weapon = FindObjectOfType<Weapon>();
         boxCollider2D = weapon.GetComponent<BoxCollider2D>();
         GameObject.Find("Melee Attack Sound").GetComponent<AudioSource>().Play();
@@ -19,12 +20,13 @@ public class AttackComboBehaviour : StateMachineBehaviour {
             SetBoxColliderSizeY(boxCollider2D, 1.5f);
         }
         weapon.Attack();
-        
-        animator.SetBool(Attack, false);
+        //Debug.Log("a");
+        animator.SetBool("attackCombo", false);
         animator.SetBool("attackCombo2", false);
     }
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        attacking = false;
         SetBoxColliderSizeX(boxCollider2D, 1.9f);  // return to the original weapon size
         SetBoxColliderSizeY(boxCollider2D, 0.85f);
     }

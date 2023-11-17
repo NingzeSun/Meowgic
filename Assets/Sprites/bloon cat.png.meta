@@ -1,0 +1,392 @@
+fileFormatVersion: 2
+guid: 9d6ffdca57dfeba48aa001f2f80dbe4d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7781385479087960072
+    second: bloon cat_0
+  - first:
+      213: -5717128717713140900
+    second: bloon cat_1
+  - first:
+      213: 4995297611518187815
+    second: bloon cat_2
+  - first:
+      213: 2117578154667570342
+    second: bloon cat_3
+  - first:
+      213: -3726573639574566483
+    second: bloon cat_4
+  - first:
+      213: -5765739264026977295
+    second: bloon cat_5
+  - first:
+      213: -2007196063132917595
+    second: bloon cat_6
+  - first:
+      213: -4668082035313366842
+    second: bloon cat_7
+  - first:
+      213: -1212474170132143895
+    second: bloon cat_8
+  - first:
+      213: 9096472588528427563
+    second: bloon cat_9
+  - first:
+      213: 2272572245632736461
+    second: bloon cat_10
+  - first:
+      213: -5134027378010240731
+    second: bloon cat_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bloon cat_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 423
+        width: 102
+        height: 170
+      alignment: 9
+      pivot: {x: 0.56081307, y: 0.48291248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff44926227f20490800000000000000
+      internalID: -7781385479087960072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloon cat_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 421
+        width: 101
+        height: 172
+      alignment: 9
+      pivot: {x: 0.610265, y: 0.5288157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53168dc8bda8a0b0800000000000000
+      internalID: -5717128717713140900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloon cat_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 418
+        width: 110
+        height: 170
+      alignment: 9
+      pivot: {x: 0.56077963, y: 0.46989873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72916e126bcd25540800000000000000
+      internalID: 4995297611518187815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloon cat_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 171
+        width: 106
+        height: 170
+      alignment: 9
+      pivot: {x: 0.5435091, y: 0.49660888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4761dbc16236d10800000000000000
+      internalID: 2117578154667570342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloon cat_4
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 170
+        width: 139
+        height: 170
+      alignment: 9
+      pivot: {x: 0.64930826, y: 0.49660888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9c2dfd40d884cc0800000000000000
+      internalID: -3726573639574566483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloon cat_5
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 35
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb562400bafbffa0800000000000000
+      internalID: -5765739264026977295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloon cat_6
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 161
+        width: 164
+        height: 178
+      alignment: 9
+      pivot: {x: 0.68279135, y: 0.5226711}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0666ea0d10524e0800000000000000
+      internalID: -2007196063132917595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloon cat_7
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 151
+        width: 190
+        height: 195
+      alignment: 9
+      pivot: {x: 0.7397008, y: 0.5679969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8a3c61f14a73fb0800000000000000
+      internalID: -4668082035313366842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloon cat_8
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 125
+        width: 214
+        height: 221
+      alignment: 9
+      pivot: {x: 0.76939034, y: 0.61477745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0efed8a2d6c2fe0800000000000000
+      internalID: -1212474170132143895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloon cat_9
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 34
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22a054cf992d3e70800000000000000
+      internalID: 9096472588528427563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloon cat_10
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 23
+        width: 35
+        height: 22
+      alignment: 9
+      pivot: {x: -2.1138532, y: -2.3631647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccd953ba6cc98f10800000000000000
+      internalID: 2272572245632736461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloon cat_11
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 0
+        width: 196
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529c19a0d4540c8b0800000000000000
+      internalID: -5134027378010240731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

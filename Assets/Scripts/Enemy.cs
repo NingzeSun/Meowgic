@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,7 +17,10 @@ public class Enemy : MonoBehaviour
     public Transform leftpoint, rightpoint;
     private bool Faceleft = false;
     public float speed;
-    private float leftx ,rightx;
+    public float leftx ,rightx;
+    private Color OriginalColor;
+    private SpriteRenderer sr;
+    public float flashtime;
 
 
     /*public LayerMask enemyMask;
@@ -36,6 +39,8 @@ public class Enemy : MonoBehaviour
 
         myWidth = mySprite.bounds.extents.x;
         myHeight = mySprite.bounds.extents.y;*/
+        sr = GetComponent<SpriteRenderer>();
+        OriginalColor = sr.color;
         rb = GetComponent<Rigidbody2D>();
         transform.DetachChildren();
         leftx = leftpoint.position.x;
@@ -108,7 +113,7 @@ public class Enemy : MonoBehaviour
     {
         Player player = collision.gameObject.GetComponent<Player>();
 
-        if (Time.time - lastAttackTime >= 3 && player != null)  // if the contact is more than 3 seconds, player gets hit again
+        if (Time.time - lastAttackTime >= 0 && player != null)  // if the contact is more than 3 seconds, player gets hit again
         {
             //print("Attack");
             lastAttackTime = Time.time;
@@ -122,7 +127,17 @@ public class Enemy : MonoBehaviour
     }
 
     public void OnHit()
-    {
+    {   
         health--;
+        flashColor(flashtime);
+    }
+
+    public void flashColor(float time){
+        sr.color = Color.red;
+        Invoke("ResetColor",time);
+    }
+
+    public void ResetColor(){
+        sr.color = OriginalColor;
     }
 }

@@ -38,7 +38,7 @@ public class ComboAttack : MonoBehaviour {
     }
     public void ComboCheck(int num) {  // Animation event
         if (clickNum >= num) {  //Animation event at the end of animation, so 1>0, 2>1, 3>2
-            anim.SetBool(AttackCombo, true); //transtion trigger condition
+            anim.SetBool("attackCombo", true); //transtion trigger condition
         }
     }
     public void ComboCheck2(int num) {

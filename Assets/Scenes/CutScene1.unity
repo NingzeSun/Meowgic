@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeTime: 5
-  sceneName: Level1 Scene
+  sceneName: CutScene2
 --- !u!4 &104082812
 Transform:
   m_ObjectHideFlags: 0
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7f54a41fefce9854cb86e993e6f4eede, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 165037e3cac610841b7e4339011422dd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -559,13 +559,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "  In a land of felines, the Persian cat reigns supreme. The king\u2019s
-    obsession with long hair has led him to use black magic to make all the cats
-    in the country grow their hair to ridiculous lengths. The once-beautiful cats
-    have turned into hairy monsters, and the kingdom is in chaos. Our hero, a brave
-    cat, sets out on a perilous journey to defeat the King of Persian Cats and save
-    the kingdom from certain doom. Will our hero be able to overcome the king\u2019s
-    dark magic and restore peace to the land? Only time will tell\u2026"
+  m_text: In a fantastical realm ruled by cats, sits the Persian Cat King in his
+    grand palace.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -592,13 +587,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 32
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
