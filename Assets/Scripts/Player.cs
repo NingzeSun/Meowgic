@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
                 material.SetInt("_BeAttack", 0);
             else
                 material.SetInt("_BeAttack", 1);
-            yield return new WaitForSeconds(.2f);  // When a yield statement is used, the coroutine pauses execution and automatically resumes at the next time.
+            yield return new WaitForSeconds(.05f);  // When a yield statement is used, the coroutine pauses execution and automatically resumes at the next time.
         }
         material.SetInt("_BeAttack", 0);
         canBeHit = true;

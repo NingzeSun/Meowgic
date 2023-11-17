@@ -11,7 +11,7 @@ public class BossWeapon : MonoBehaviour
 	public Vector3 attackOffset;
 	public float attackRange = 1f;
 	public LayerMask attackMask;
-    float lastAttackTime = -5;
+    float lastAttackTime = -3;
     public int attackCountRemain = 3;
 
     public void Attack()
@@ -48,7 +48,7 @@ public class BossWeapon : MonoBehaviour
 	}
 	void Update()
 	{
-        if (Time.time - lastAttackTime >= 10)
+        if (Time.time - lastAttackTime >= 3)
         {
             if (GetComponent<Animator>().GetBool("IsEnraged") == true)
                 attackCountRemain = 5;
