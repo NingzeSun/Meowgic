@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [Header("Jumping Reference")]
     public float jumpForce = 8;
 
-    int wallJumpCount = 5;
+    int wallJumpCount = 7;
 
     [Header("Status")]
     public bool isOnGround;
@@ -132,7 +132,7 @@ public class Player : MonoBehaviour
         //The player is on the ground
         if (isOnGround)
         {
-            wallJumpCount = 5;
+            wallJumpCount = 7;
         }
         //Jumpng from the ground
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
