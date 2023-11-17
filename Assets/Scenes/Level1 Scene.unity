@@ -717,7 +717,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96729489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -49.92, y: -15.75, z: -10.00001}
+  m_LocalPosition: {x: -51.57, y: -15.800001, z: -10.00001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 456425960}
@@ -72443,6 +72443,16 @@ PrefabInstance:
       objectReference: {fileID: 660705852}
     - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
         type: 3}
+      propertyPath: DeathAudio
+      value: 
+      objectReference: {fileID: 1404189157}
+    - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: onHitAudio
+      value: 
+      objectReference: {fileID: 1427220220}
+    - target: {fileID: 5130375401906703147, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
       propertyPath: rightLimit
       value: 
       objectReference: {fileID: 1341501967}
@@ -74623,12 +74633,12 @@ PrefabInstance:
     - target: {fileID: 6474417508619831186, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -49.699997
+      value: -51.35
       objectReference: {fileID: 0}
     - target: {fileID: 6474417508619831186, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.3
+      value: -18.35
       objectReference: {fileID: 0}
     - target: {fileID: 6474417508619831186, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab,
         type: 3}
@@ -74687,6 +74697,12 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 7e5cddec1567c154bbf3d7314f6e7033, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d91cf7fc6c24f143ba973f7f2ddc0ab, type: 3}
+--- !u!82 &1404189157 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2409978746102494772, guid: c8d9285cf925a684b80689342d0ec44e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1047614431}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1412278247
 GameObject:
   m_ObjectHideFlags: 0
@@ -74717,6 +74733,12 @@ Transform:
   m_Father: {fileID: 1557680939}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1427220220 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5328495110953414356, guid: c8d9285cf925a684b80689342d0ec44e,
+    type: 3}
+  m_PrefabInstance: {fileID: 915270069}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1463828333
 GameObject:
   m_ObjectHideFlags: 0

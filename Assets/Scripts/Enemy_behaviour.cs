@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -34,6 +34,8 @@ public class Enemy_behaviour : MonoBehaviour
     private Color OriginalColor;
     private SpriteRenderer sr;
     public float flashtime;
+    public AudioSource onHitAudio, DeathAudio;
+
     #endregion
 
     Player player;
@@ -52,7 +54,8 @@ public class Enemy_behaviour : MonoBehaviour
     void Update()
     {
         if (health <= 0)
-        {
+        {   
+            DeathAudio.Play();
             Destroy(gameObject);
         }
 
@@ -241,6 +244,9 @@ public class Enemy_behaviour : MonoBehaviour
     {
         health--;
         flashColor(flashtime);
+        if (health >=1){onHitAudio.Play();}
+        if (health < 1){DeathAudio.Play();}
+        
     }
 
 
