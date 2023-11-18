@@ -21,7 +21,7 @@ public class Boss_Run : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (FindObjectOfType<BossWeapon>().attackCountRemain > 0)
+        if (FindObjectOfType<BossWeapon>().attackCountRemain > 0 && Vector3.Distance(boss.transform.position, player.position)<10)
         {
             boss.LookAtPlayer();
             Vector2 target = new Vector2(player.position.x, rb.position.y);
