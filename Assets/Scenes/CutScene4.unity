@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def4d58afbaa84c42a6ace14ebff6252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTime: 5
+  changeTime: 7
   sceneName: CutScene5
 --- !u!4 &1078651704
 Transform:
