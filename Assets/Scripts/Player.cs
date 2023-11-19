@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 
     float xVelocity;
 
+
     [Header("Jumping Reference")]
     public float jumpForce = 8;
 
@@ -86,12 +87,13 @@ public class Player : MonoBehaviour
         }
 
         if (health <= 0)
-        {
+        {   
             animator.Play("Death");
             //Destroy(gameObject);
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
+
 
     void FixedUpdate()
     {
