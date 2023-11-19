@@ -7,7 +7,7 @@ using System.Threading;
 public class BossHealth : MonoBehaviour
 {
 
-	public int health = 40;
+	public int health = 50;
 
 	public GameObject deathEffect;
 
@@ -20,7 +20,7 @@ public class BossHealth : MonoBehaviour
 		print("a");
 		health -= damage;
 
-		if (health <= 20)
+		if (health <= 25)
 		{
 			GetComponent<Animator>().SetBool("IsEnraged", true);
 		}
@@ -28,7 +28,7 @@ public class BossHealth : MonoBehaviour
 		if (health <= 0)
 		{
 			Die();
-			Thread.Sleep(2000);
+			Thread.Sleep(10000);
 			SceneManager.LoadScene("CutScene6");
 		}
 	}
