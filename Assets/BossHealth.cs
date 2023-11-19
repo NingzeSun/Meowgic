@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Threading;
 
 public class BossHealth : MonoBehaviour
 {
@@ -26,6 +28,8 @@ public class BossHealth : MonoBehaviour
 		if (health <= 0)
 		{
 			Die();
+			Thread.Sleep(2000);
+			SceneManager.LoadScene("CutScene6");
 		}
 	}
 
