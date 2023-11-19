@@ -148,13 +148,13 @@ public class Player : MonoBehaviour
             if (closeWithLeftWall)
             {
                 wallJumpCount--;
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                rb.velocity = new Vector2(0, jumpForce);
                 jumpAudio.Play();
             }
             if (closeWithRightWall)
             {
                 wallJumpCount--;
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                rb.velocity = new Vector2(0, jumpForce);
                 jumpAudio.Play();
             }
         }
