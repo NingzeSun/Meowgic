@@ -28,7 +28,7 @@ public class BossHealth : MonoBehaviour
 		if (health <= 0)
 		{
 			Die();
-			Thread.Sleep(10000);
+			Thread.Sleep(3000);
 			SceneManager.LoadScene("CutScene6");
 		}
 	}

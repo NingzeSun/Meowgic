@@ -19,7 +19,7 @@ public class ComboAttack : MonoBehaviour {
             clickNum = 0;
             clickNum2 = 0;
         }
-        if (Input.GetMouseButtonDown(0)) { //Left mouse click
+        if (Input.GetMouseButtonDown(0) && !anim.GetBool("IsMove")) { //Left mouse click
             lastClickedTime = Time.time;
             clickNum++;
             if (clickNum == 1) {
@@ -27,7 +27,7 @@ public class ComboAttack : MonoBehaviour {
             }
             clickNum = Mathf.Clamp(clickNum, 0, 3);
         }
-        if (Input.GetMouseButtonDown(1)) { //Right mouse click
+        if (Input.GetMouseButtonDown(1) && !anim.GetBool("IsMove")) { //Right mouse click
             lastClickedTime = Time.time;
             clickNum2++;
             if (clickNum2 == 1) {
