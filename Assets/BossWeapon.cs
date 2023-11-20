@@ -51,7 +51,7 @@ public class BossWeapon : MonoBehaviour
         if (Time.time - lastAttackTime >= 3)
         {
             if (GetComponent<Animator>().GetBool("IsEnraged") == true)
-                attackCountRemain = 10;
+                attackCountRemain = 8;
             else
                 attackCountRemain = 5;
         }
