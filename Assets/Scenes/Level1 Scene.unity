@@ -1469,6 +1469,7 @@ MonoBehaviour:
   leftx: -4
   rightx: 5
   flashtime: 0.2
+  dieTime: 0
 --- !u!95 &294630477
 Animator:
   serializedVersion: 3
@@ -1830,6 +1831,7 @@ MonoBehaviour:
   leftx: -4
   rightx: 5
   flashtime: 0.2
+  dieTime: 0
 --- !u!95 &397581618
 Animator:
   serializedVersion: 3
@@ -73371,6 +73373,7 @@ MonoBehaviour:
   leftx: -4
   rightx: 5
   flashtime: 0.2
+  dieTime: 0
 --- !u!95 &864262328
 Animator:
   serializedVersion: 3
@@ -73647,6 +73650,7 @@ MonoBehaviour:
   leftx: -4
   rightx: 5
   flashtime: 0.2
+  dieTime: 0
 --- !u!50 &905904410
 Rigidbody2D:
   serializedVersion: 4
@@ -75136,7 +75140,7 @@ PrefabInstance:
     - target: {fileID: 5104645226969014923, guid: 9f1d973218472e54290ef75c9eb2b7e1,
         type: 3}
       propertyPath: m_Value
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5104645226969014924, guid: 9f1d973218472e54290ef75c9eb2b7e1,
         type: 3}
@@ -77006,6 +77010,7 @@ MonoBehaviour:
   leftx: -4
   rightx: 5
   flashtime: 0.2
+  dieTime: 0
 --- !u!95 &1566651228
 Animator:
   serializedVersion: 3
@@ -78039,6 +78044,7 @@ MonoBehaviour:
   leftx: -4
   rightx: 5
   flashtime: 0.2
+  dieTime: 0
 --- !u!95 &1936152964
 Animator:
   serializedVersion: 3
@@ -80619,6 +80625,7 @@ MonoBehaviour:
   leftx: -4
   rightx: 5
   flashtime: 0.2
+  dieTime: 0
 --- !u!95 &2081672360
 Animator:
   serializedVersion: 3
