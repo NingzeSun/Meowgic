@@ -21,6 +21,9 @@ public class Enemy : MonoBehaviour
     private Color OriginalColor;
     private SpriteRenderer sr;
     public float flashtime;
+    private Animator Anim;
+    public float dieTime;
+    
 
 
     /*public LayerMask enemyMask;
@@ -39,8 +42,10 @@ public class Enemy : MonoBehaviour
 
         myWidth = mySprite.bounds.extents.x;
         myHeight = mySprite.bounds.extents.y;*/
+        dieTime = 1.5f;
         sr = GetComponent<SpriteRenderer>();
         OriginalColor = sr.color;
+        Anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         transform.DetachChildren();
         leftx = leftpoint.position.x;
@@ -56,9 +61,15 @@ public class Enemy : MonoBehaviour
         movement();
 
         if (health <= 0)
-        {
-            Destroy(gameObject);
+        {   
+            speed = 0;
+            Anim.SetTrigger("Die");
+            Invoke("killEnemy",dieTime);
         }
+    }
+
+    void killEnemy(){
+        Destroy(gameObject);
     }
 
 
@@ -129,12 +140,15 @@ public class Enemy : MonoBehaviour
     public void OnHit()
     {   
         health--;
+        Anim.SetTrigger("hit");
         flashColor(flashtime);
+
     }
 
     public void flashColor(float time){
         sr.color = Color.red;
         Invoke("ResetColor",time);
+        Anim.SetTrigger("back hit");
     }
 
     public void ResetColor(){
