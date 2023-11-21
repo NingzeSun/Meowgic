@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
     public float flashtime;
     private Animator Anim;
     public float dieTime;
-    
+    public bool dead = false;
 
 
     /*public LayerMask enemyMask;
@@ -65,6 +65,7 @@ public class Enemy : MonoBehaviour
             speed = 0;
             Anim.SetTrigger("Die");
             Invoke("killEnemy",dieTime);
+            dead = true;
         }
     }
 
@@ -128,7 +129,10 @@ public class Enemy : MonoBehaviour
         {
             //print("Attack");
             lastAttackTime = Time.time;
-            player.OnHit();
+            if(!dead){
+                player.OnHit();
+            }
+            
         }
 
         if (player == null)
