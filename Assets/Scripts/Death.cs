@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Threading;
 
 public class Death : StateMachineBehaviour
 {
@@ -17,8 +16,6 @@ public class Death : StateMachineBehaviour
     //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {   
-        
-        Thread.Sleep(1000);
         Destroy(GameObject.FindGameObjectWithTag("Player"));
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
