@@ -40,8 +40,32 @@ public class Player : MonoBehaviour
                 StartCoroutine(Flash());
             }
         }
-        
+    }
 
+    public void OnHitbyBoss()
+    {
+        if (canBeHit == true)
+        {
+            health -= 2;
+            if (health >= 1)
+            {
+                onHitAudio.Play();
+                StartCoroutine(Flash());
+            }
+        }
+    }
+
+    public void OnHitbyMage()
+    {
+        if (canBeHit == true)
+        {
+            health-=3;
+            if (health >= 1)
+            {
+                onHitAudio.Play();
+                StartCoroutine(Flash());
+            }
+        }
     }
 
     IEnumerator Flash()

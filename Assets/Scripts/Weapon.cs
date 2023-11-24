@@ -6,6 +6,7 @@ public class Weapon : MonoBehaviour
     List<Enemy> enemysOnRange = new List<Enemy>();
     List<Enemy_behaviour> enemy_Behaviours = new List<Enemy_behaviour>();
     BossHealth bossHealth;
+    MagicBoss magicBoss;
     public AudioSource weaponAudioSource;
     public AudioClip normalHit, hitWall;
     public void Attack()
@@ -19,6 +20,7 @@ public class Weapon : MonoBehaviour
             enemy_Behaviours[i].OnHit();
         }
         bossHealth?.TakeDamage(1);
+        magicBoss?.TakeDamage(1);
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -29,6 +31,8 @@ public class Weapon : MonoBehaviour
             enemy_Behaviours.Add(enemy_behaviour);
         if (col.gameObject.TryGetComponent<BossHealth>(out BossHealth boss_Health))
             bossHealth = boss_Health;
+        if (col.gameObject.TryGetComponent<MagicBoss>(out MagicBoss magic_Boss))
+            magicBoss = magic_Boss;
         if (col.name.Contains("Wall"))
             weaponAudioSource.clip = hitWall;
     }
@@ -40,6 +44,8 @@ public class Weapon : MonoBehaviour
             enemy_Behaviours.Remove(enemy_behaviour);
         if (col.gameObject.TryGetComponent<BossHealth>(out BossHealth boss_Health))
             bossHealth = null;
+        if (col.gameObject.TryGetComponent<MagicBoss>(out MagicBoss magic_Boss))
+            magicBoss = null;
         if (col.name.Contains("Wall"))
             weaponAudioSource.clip = normalHit;
 

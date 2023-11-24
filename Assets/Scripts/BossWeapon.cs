@@ -41,7 +41,7 @@ public class BossWeapon : MonoBehaviour
 		Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
 		if (colInfo != null)
 		{
-			colInfo.GetComponent<Player>()?.OnHit();
+			colInfo.GetComponent<Player>()?.OnHitbyBoss();
 		}
 		attackCountRemain--;
 		lastAttackTime=Time.time;
