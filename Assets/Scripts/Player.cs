@@ -164,7 +164,7 @@ public class Player : MonoBehaviour
         //Jumpng from the ground
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
-            rb.velocity = new Vector2(0, jumpForce);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jumpAudio.Play();
 
         }
