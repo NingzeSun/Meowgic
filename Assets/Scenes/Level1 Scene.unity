@@ -2309,6 +2309,11 @@ PrefabInstance:
       propertyPath: rightLimit
       value: 
       objectReference: {fileID: 2030304724}
+    - target: {fileID: 5226218537142015529, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5226218537142015530, guid: c8d9285cf925a684b80689342d0ec44e,
         type: 3}
       propertyPath: m_RootOrder
@@ -73810,6 +73815,11 @@ PrefabInstance:
       propertyPath: rightLimit
       value: 
       objectReference: {fileID: 1057386354}
+    - target: {fileID: 5226218537142015529, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5226218537142015530, guid: c8d9285cf925a684b80689342d0ec44e,
         type: 3}
       propertyPath: m_RootOrder
@@ -75852,6 +75862,11 @@ PrefabInstance:
       propertyPath: rightLimit
       value: 
       objectReference: {fileID: 1412278248}
+    - target: {fileID: 5226218537142015529, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5226218537142015530, guid: c8d9285cf925a684b80689342d0ec44e,
         type: 3}
       propertyPath: m_RootOrder
@@ -81023,6 +81038,11 @@ PrefabInstance:
       propertyPath: rightLimit
       value: 
       objectReference: {fileID: 461454511}
+    - target: {fileID: 5226218537142015529, guid: c8d9285cf925a684b80689342d0ec44e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5226218537142015530, guid: c8d9285cf925a684b80689342d0ec44e,
         type: 3}
       propertyPath: m_RootOrder
