@@ -135,7 +135,8 @@ public class Player : MonoBehaviour
     void Move()
     {
         xVelocity = Input.GetAxisRaw("Horizontal");
-        animator.SetBool("IsMove", xVelocity != 0);
+        if (!animator.GetBool("attackCombo") && !animator.GetBool("attackCombo2") && AttackComboBehaviour.attacking == false)
+            animator.SetBool("IsMove", xVelocity != 0);
 
         //transform.Translate(xVelocity * speed, 0, 0);
         transform.Translate(xVelocity * speed, 0, 0);
