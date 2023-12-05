@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CutScene7.unity
     guid: d1182579ca946f349b9c2d94ac48266d
+  - enabled: 1
+    path: Assets/Scenes/Trap.unity
+    guid: ddc5451d7bb633644b60a7649777f508
   m_configObjects: {}
