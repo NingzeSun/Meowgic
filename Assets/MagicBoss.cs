@@ -20,7 +20,7 @@ public class MagicBoss : MonoBehaviour
         bossHitSound.Play();
         if (health <= 0)
         {
-            animator.Play("Death");   
+            animator.Play("magicbossdeath");   
             Invoke("LoadScene", 2.0f);
         }
     }
