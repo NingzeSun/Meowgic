@@ -21,7 +21,7 @@ public class MagicBoss : MonoBehaviour
         if (health <= 0)
         {
             animator.Play("magicbossdeath");   
-            Invoke("LoadScene", 2.0f);
+            Invoke("LoadScene", 3.0f);
         }
     }
     public void Transport()
