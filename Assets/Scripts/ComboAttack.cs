@@ -8,7 +8,7 @@ public class ComboAttack : MonoBehaviour {
     public int clickNum2 = 0;
     private float lastClickedTime = 0;
     //The maximum delay between each sequence of a combo attack
-    public float maxComboDelay = 0.9f;
+    public float maxComboDelay = 0.1f;
     
     private static readonly int AttackCombo = Animator.StringToHash("attackCombo");
     void Start() {

@@ -28,7 +28,7 @@ public class Trap : MonoBehaviour
     public IEnumerator IE_Attack()
     {
         spriteRenderer.color = new Color(1,1,1,.1f);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         Vector3 startPos= transform.position;
         transform.localPosition = new Vector3(transform.localPosition.x,-13.75f,30);
         boxCollider.enabled = true;

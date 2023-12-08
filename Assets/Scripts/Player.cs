@@ -12,9 +12,10 @@ public class Player : MonoBehaviour
 
     float xVelocity;
 
+    public Vector2 _respawnPoint;
 
     [Header("Jumping Reference")]
-    public float jumpForce = 8;
+    public float jumpForce = 10;
 
     int wallJumpCount = 7;
 
@@ -113,8 +114,6 @@ public class Player : MonoBehaviour
         if (health <= 0)
         {   
             animator.Play("Death");
-            //Destroy(gameObject);
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
@@ -191,25 +190,9 @@ public class Player : MonoBehaviour
         healAudio.Play();
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+   public void OnPlayerDeath()
     {
-        /*if (collision.gameObject.name.Contains("Wall"))
-        {
-            if (collision.contacts[0].point.x > transform.position.x)
-                closeWithRightWall = true;
-            if (collision.contacts[0].point.x < transform.position.x)
-                closeWithLeftWall = true;
-        }*/
-    }
-
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        /*if (collision.gameObject.name.Contains("Wall"))
-        {
-            if (collision.transform.position.x > transform.position.x)
-                closeWithRightWall = false;
-            if (collision.transform.position.x < transform.position.x)
-                closeWithLeftWall = false;
-        }*/
+        transform.position = _respawnPoint;
+        health = 10;
     }
 }
