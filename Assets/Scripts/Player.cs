@@ -12,8 +12,6 @@ public class Player : MonoBehaviour
 
     float xVelocity;
 
-    public Vector2 _respawnPoint;
-
     [Header("Jumping Reference")]
     public float jumpForce = 10;
 
@@ -190,9 +188,4 @@ public class Player : MonoBehaviour
         healAudio.Play();
     }
 
-   public void OnPlayerDeath()
-    {
-        transform.position = _respawnPoint;
-        health = 10;
-    }
 }
