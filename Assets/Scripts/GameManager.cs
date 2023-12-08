@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.P))
         {
                 pauseMenu.SetActive(true);
                 Time.timeScale = 0;
