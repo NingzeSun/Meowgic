@@ -8,3 +8,5 @@ Audio: Bailin Ren
 Programmers: Dian Huang, Ningze Sun
 
 Writer: Bailin Ren
+
+Link to play: https://ningze.itch.io/meowgic
