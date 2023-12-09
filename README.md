@@ -1,4 +1,4 @@
-# Meowgic--Team_Overwhelmingly_Postive
+# Meowgic -- Team Overwhelmingly Postive
 Producer: Leo Zhang
 
 Artists: Leo Zhang, Yiwen Xu
