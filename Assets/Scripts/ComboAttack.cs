@@ -1,6 +1,4 @@
-﻿// Reference: https://www.cnblogs.com/sanyejun/p/12685963.html
-
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ComboAttack : MonoBehaviour {
     public Animator anim;
