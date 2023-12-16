@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class BossHealth : MonoBehaviour
 {
 
-	public int health = 50;
+	public int health = 55;
 	
 	public GameObject deathEffect;
 	public AudioSource bossHitSound;
@@ -23,7 +23,7 @@ public class BossHealth : MonoBehaviour
 		print("a");
 		health -= damage;
 		bossHitSound.Play();
-		if (health <= 25)
+		if (health <= 29)
 		{
 			
 			GetComponent<Animator>().SetBool("IsEnraged", true);

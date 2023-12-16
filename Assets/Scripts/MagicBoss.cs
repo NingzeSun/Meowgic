@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MagicBoss : MonoBehaviour
 {
-    public int health = 40;
+    public int health = 50;
     public AudioSource bossHitSound;
     Animator animator;
     public float leftX,rightX;
