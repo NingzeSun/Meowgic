@@ -2,12 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Greetings from Sid!
-
-//Thank You for watching my tutorials
-//I really hope you find my tutorials helpful and knowledgeable
-//Appreciate your support.
-
 public class Enemy_behaviour : MonoBehaviour
 {
     #region Public Variables
